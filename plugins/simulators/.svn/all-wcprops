@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/2445/trunk/plugins/simulators
+END
+PlayerServer
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/1961/trunk/plugins/simulators/PlayerServer
+END
+StageSimulator
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pyrobot/!svn/ver/2445/trunk/plugins/simulators/StageSimulator
+END
+GazeboSimulator
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/1958/trunk/plugins/simulators/GazeboSimulator
+END
+RobocupSimulator
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pyrobot/!svn/ver/1611/trunk/plugins/simulators/RobocupSimulator
+END
+PyrobotSimulator
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pyrobot/!svn/ver/2211/trunk/plugins/simulators/PyrobotSimulator
+END

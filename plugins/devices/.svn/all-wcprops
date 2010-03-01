@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/2559/trunk/plugins/devices
+END
+Camera.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/1656/trunk/plugins/devices/Camera.py
+END
+GPS.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/220/trunk/plugins/devices/GPS.py
+END
+Power.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/220/trunk/plugins/devices/Power.py
+END
+CanonPTZ.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2510/trunk/plugins/devices/CanonPTZ.py
+END
+Logic.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/2237/trunk/plugins/devices/Logic.py
+END
+GLView.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/GLView.py
+END
+BlimpCameraHallway.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/2273/trunk/plugins/devices/BlimpCameraHallway.py
+END
+TutorialCamera2.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/1955/trunk/plugins/devices/TutorialCamera2.py
+END
+TutorialCameraStereo.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/2246/trunk/plugins/devices/TutorialCameraStereo.py
+END
+Device.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/Device.py
+END
+V4LCamera1.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/V4LCamera1.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/220/trunk/plugins/devices/__init__.py
+END
+TutorialCameraFiducials.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pyrobot/!svn/ver/2250/trunk/plugins/devices/TutorialCameraFiducials.py
+END
+V4L2Camera.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/2559/trunk/plugins/devices/V4L2Camera.py
+END
+ViewAll.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/ViewAll.py
+END
+FourwayCamera.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2243/trunk/plugins/devices/FourwayCamera.py
+END
+PlayerCamera.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/PlayerCamera.py
+END
+Bumpers.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/220/trunk/plugins/devices/Bumpers.py
+END
+V4LCamera.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2483/trunk/plugins/devices/V4LCamera.py
+END
+Blob.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/1825/trunk/plugins/devices/Blob.py
+END
+Test.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2278/trunk/plugins/devices/Test.py
+END
+PanTiltZoom.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/1653/trunk/plugins/devices/PanTiltZoom.py
+END
+ViewBack_all.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/ViewBack_all.py
+END
+ViewLeft.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/ViewLeft.py
+END
+ViewBack.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/ViewBack.py
+END
+TwoV4LCameras.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2243/trunk/plugins/devices/TwoV4LCameras.py
+END
+V4LCamera0.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/2275/trunk/plugins/devices/V4LCamera0.py
+END
+Frequency.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2376/trunk/plugins/devices/Frequency.py
+END
+Stereo.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/2246/trunk/plugins/devices/Stereo.py
+END
+TwowayCamera.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/2243/trunk/plugins/devices/TwowayCamera.py
+END
+FourwayRot2.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/2273/trunk/plugins/devices/FourwayRot2.py
+END
+Laser.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/220/trunk/plugins/devices/Laser.py
+END
+Blobfinder.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/1974/trunk/plugins/devices/Blobfinder.py
+END
+RovioCamera.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/2552/trunk/plugins/devices/RovioCamera.py
+END
+Gripper.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1441/trunk/plugins/devices/Gripper.py
+END
+ViewRight.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/ViewRight.py
+END
+SimpleDevice.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/SimpleDevice.py
+END
+View.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/View.py
+END
+ViewFront_all.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/ViewFront_all.py
+END
+TutorialCamera.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/TutorialCamera.py
+END
+AllSupported.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/1937/trunk/plugins/devices/AllSupported.py
+END
+FakeCamera.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/FakeCamera.py
+END
+BlimpCameraBullseye.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pyrobot/!svn/ver/2273/trunk/plugins/devices/BlimpCameraBullseye.py
+END
+Sonar.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/1974/trunk/plugins/devices/Sonar.py
+END
+RobocupCamera.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/RobocupCamera.py
+END
+BT848Camera.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/BT848Camera.py
+END
+AiboCamera.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/AiboCamera.py
+END
+ViewFront.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/ViewFront.py
+END
+TestNoBlock.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/2367/trunk/plugins/devices/TestNoBlock.py
+END
+BlobCamera.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/1880/trunk/plugins/devices/BlobCamera.py
+END

@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2575/trunk/plugins/worlds/Pyrobot
+END
+BigRoomWithLights2Pioneers.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/pyrobot/!svn/ver/2065/trunk/plugins/worlds/Pyrobot/BigRoomWithLights2Pioneers.py
+END
+Directional.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/2496/trunk/plugins/worlds/Pyrobot/Directional.py
+END
+MyroWorld.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pyrobot/!svn/ver/2236/trunk/plugins/worlds/Pyrobot/MyroWorld.py
+END
+BigRoom.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pyrobot/!svn/ver/2091/trunk/plugins/worlds/Pyrobot/BigRoom.py
+END
+LongHall.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/2110/trunk/plugins/worlds/Pyrobot/LongHall.py
+END
+LightBehindWall.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pyrobot/!svn/ver/2081/trunk/plugins/worlds/Pyrobot/LightBehindWall.py
+END
+LightInCorral.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/2081/trunk/plugins/worlds/Pyrobot/LightInCorral.py
+END
+VacuumCleanerWorld.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/pyrobot/!svn/ver/2543/trunk/plugins/worlds/Pyrobot/VacuumCleanerWorld.py
+END
+AndrewHallway.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/2123/trunk/plugins/worlds/Pyrobot/AndrewHallway.py
+END
+Tutorial.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/2238/trunk/plugins/worlds/Pyrobot/Tutorial.py
+END
+Challenge1.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pyrobot/!svn/ver/2093/trunk/plugins/worlds/Pyrobot/Challenge1.py
+END
+Challenge2.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pyrobot/!svn/ver/2093/trunk/plugins/worlds/Pyrobot/Challenge2.py
+END
+Test3D.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2232/trunk/plugins/worlds/Pyrobot/Test3D.py
+END
+Braitenberg2Lights1Robot.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/pyrobot/!svn/ver/2074/trunk/plugins/worlds/Pyrobot/Braitenberg2Lights1Robot.py
+END
+CamWorld.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/2232/trunk/plugins/worlds/Pyrobot/CamWorld.py
+END
+Fireflies.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pyrobot/!svn/ver/2067/trunk/plugins/worlds/Pyrobot/Fireflies.py
+END
+WumpusWorld.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/2543/trunk/plugins/worlds/Pyrobot/WumpusWorld.py
+END
+PuckWorld.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pyrobot/!svn/ver/2572/trunk/plugins/worlds/Pyrobot/PuckWorld.py
+END
+LightInMaze.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/2421/trunk/plugins/worlds/Pyrobot/LightInMaze.py
+END
+Room.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/2490/trunk/plugins/worlds/Pyrobot/Room.py
+END
+KonaneWorld.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/1975/trunk/plugins/worlds/Pyrobot/KonaneWorld.py
+END
+LightEnclosed.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/2083/trunk/plugins/worlds/Pyrobot/LightEnclosed.py
+END
+LightBehindCorral.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/pyrobot/!svn/ver/2081/trunk/plugins/worlds/Pyrobot/LightBehindCorral.py
+END
+Everything.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pyrobot/!svn/ver/2575/trunk/plugins/worlds/Pyrobot/Everything.py
+END
+Braitenberg.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/2218/trunk/plugins/worlds/Pyrobot/Braitenberg.py
+END
+LoopingMaze.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/2520/trunk/plugins/worlds/Pyrobot/LoopingMaze.py
+END
+Myro3DWorld.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/2236/trunk/plugins/worlds/Pyrobot/Myro3DWorld.py
+END
+RLWorld.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pyrobot/!svn/ver/2543/trunk/plugins/worlds/Pyrobot/RLWorld.py
+END

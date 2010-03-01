@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/2529/trunk/vision/cvision
+END
+VisionLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2511/trunk/vision/cvision/VisionLib.cpp
+END
+VisionLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2511/trunk/vision/cvision/VisionLib.h
+END
+VisionLib.i
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2511/trunk/vision/cvision/VisionLib.i
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1241/trunk/vision/cvision/__init__.py
+END
+Makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/2526/trunk/vision/cvision/Makefile.linux
+END
+Makefile.mac
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2520/trunk/vision/cvision/Makefile.mac
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2529/trunk/vision/cvision/Makefile
+END

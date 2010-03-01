@@ -1,0 +1,7 @@
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig
+yum install ode ode-devel gsl freeglut-devel wxPythonGTK2 libtool-ltdl-devel
+ln -s /usr/lib/libltdl.so.3 /usr/lib/libltdl.so
+mkdir -p /usr/X11R6/lib/X11
+ln -s /usr/share/X11/rgb.txt /usr/X11R6/lib/X11/rgb.txt 
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.4/site-packages
+export LD_LIBRARY_PATH=/usr/local/lib

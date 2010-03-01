@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<gz:world xmlns:gz="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz" xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor" xmlns:window="http://playerstage.sourceforge.net/gazebo/xmlschema/#window" xmlns:param="http://playerstage.sourceforge.net/gazebo/xmlschema/#params" xmlns:ui="http://playerstage.sourceforge.net/gazebo/xmlschema/#params">
+
+  <param:Global>
+    <gravity>0.0 0.0 -9.8</gravity>
+    <utmOffset>0 0</utmOffset>
+  </param:Global>
+
+  <model:ObserverCam>
+    <id>userCam0</id>
+
+    <xyz>0 0 60</xyz>
+    <rpy>0 30 40</rpy>
+
+    <imageSize>640 480</imageSize>
+    <displayRays>false</displayRays>
+    <farClip>1000</farClip>
+
+    <shadeSmooth>true</shadeSmooth>
+    <polygonFill>true</polygonFill>
+  </model:ObserverCam>
+
+  <model:LightSource>
+    <id>0</id>
+    <xyz>65 65 400</xyz>
+    <attenuation>0.1 0.005 0.0</attenuation>
+  </model:LightSource>
+
+  <model:Terrain>
+    <!-- Use gzbuilder to create the terrain file-->
+    <!-- ex: gzbuilder -i terrain.png -o terrain.gzb -n -v 20 -e 2 -s 10 -t 10 -->
+    <terrainFile>terrain.gzb</terrainFile>
+    <xyz>0 0 0</xyz>
+    <color>0 1.0 0.0</color>
+    <textureFile>grid.ppm</textureFile>
+  </model:Terrain>
+
+</gz:world>

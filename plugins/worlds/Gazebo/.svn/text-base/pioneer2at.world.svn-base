@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<gz:world xmlns:gz="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz" xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" xmlns:window="http://playerstage.sourceforge.net/gazebo/xmlschema/#window" xmlns:param="http://playerstage.sourceforge.net/gazebo/xmlschema/#param">
+
+  <model:ObserverCam>
+    <id>userCam0</id>
+    <xyz>-0.389 -0.898 1.046</xyz>
+    <rpy>0 37 31</rpy>
+    <imageSize>640 480</imageSize>
+    <updateRate>10</updateRate>
+
+    <nearClip>0.2</nearClip>
+    <farClip>100</farClip>
+
+    <displayRays>false</displayRays>
+    <displayAxes>false</displayAxes>
+    <displayCoM>false</displayCoM>
+    <displayTextures>true</displayTextures>
+  </model:ObserverCam>
+
+
+  <model:LightSource>
+    <id>light0</id>
+    <xyz>-5.000 -5.000 10.000</xyz>
+  </model:LightSource>
+
+  <model:GroundPlane>
+    <id>ground1</id>
+    <color>0.5 0.5 0.5</color>
+    <textureFile>grid.ppm</textureFile>
+  </model:GroundPlane>
+
+  <model:Pioneer2AT>
+    <id>robot1</id>
+    <xyz>0.012 -0.005 -0.000</xyz>
+    <model:SickLMS200>
+      <id>laser1</id>
+      <xyz>0.100 0.000 0.30</xyz>
+      <rpy>0 0 0</rpy>
+      <scanRate>75</scanRate>
+      <model:MonoCam>
+        <id>camera1</id>
+        <xyz>0 0 0.20</xyz>
+
+        <nearClip>0.5</nearClip>
+        <farClip>3</farClip>
+
+      </model:MonoCam>
+    </model:SickLMS200>
+  </model:Pioneer2AT>
+
+  <model:Pioneer2AT>
+    <id>robot2</id>
+    <xyz>0.512 -0.505 0.000</xyz>
+    <model:SickLMS200>
+      <id>laser2</id>
+      <xyz>0.100 0.000 0.30</xyz>
+      <rpy>0 0 0</rpy>
+      <scanRate>75</scanRate>
+      <model:MonoCam>
+        <id>camera2</id>
+        <xyz>0 0 0.20</xyz>
+
+        <nearClip>0.5</nearClip>
+        <farClip>3</farClip>
+
+      </model:MonoCam>
+    </model:SickLMS200>
+  </model:Pioneer2AT>
+
+  <model:SimpleSolid>
+    <xyz>2.000 0.000 -0.000</xyz>
+    <shape>box</shape>
+    <size>1.10 1.10 .40</size>
+    <color>0.0 1.0 0</color>     
+    <retro>1.0</retro>
+    <fiducial>1</fiducial>
+  </model:SimpleSolid>
+
+  <model:SimpleSolid>
+    <xyz>1.000 -1.000 -0.000</xyz>
+    <shape>cylinder</shape>
+    <size>0.50 0.40</size>
+    <color>0.0 0.0 0.5</color>     
+  </model:SimpleSolid>
+
+</gz:world>

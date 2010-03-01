@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/pyrobot/!svn/ver/2493/trunk/examples
+END
+evolang.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/2493/trunk/examples/evolang.py
+END
+iac.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/2473/trunk/examples/iac.py
+END
+plot.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pyrobot/!svn/ver/2426/trunk/examples/plot.py
+END
+twospiral.dat
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2373/trunk/examples/twospiral.dat
+END
+SimpleBrain.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2333/trunk/examples/SimpleBrain.py
+END
+dataBrain.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2337/trunk/examples/dataBrain.py
+END
+twospy.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/2410/trunk/examples/twospy.py
+END
+aiboIac.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/2377/trunk/examples/aiboIac.py
+END

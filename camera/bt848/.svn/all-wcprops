@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/pyrobot/!svn/ver/2367/trunk/camera/bt848
+END
+BT848.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/2235/trunk/camera/bt848/BT848.h
+END
+BT848.i
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/1996/trunk/camera/bt848/BT848.i
+END
+Constants.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/438/trunk/camera/bt848/Constants.h
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/2367/trunk/camera/bt848/__init__.py
+END
+bt848grab.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1199/trunk/camera/bt848/bt848grab.cpp
+END
+Camera.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/443/trunk/camera/bt848/Camera.cpp
+END
+ioctl_bt848.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/438/trunk/camera/bt848/ioctl_bt848.h
+END
+BT848.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2235/trunk/camera/bt848/BT848.cpp
+END
+ioctl_meteor.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/438/trunk/camera/bt848/ioctl_meteor.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/1618/trunk/camera/bt848/Makefile
+END
+Camera.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/443/trunk/camera/bt848/Camera.h
+END

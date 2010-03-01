@@ -1,0 +1,108 @@
+Changed source code
+khep_serial.h
+	KHEP_DEFAULT_BAUD 38400
+sim.c
+	to load other worlds rather than home.world
+	
+                          Khepera Simulator version 2.0
+                         -------------------------------
+
+DESCRIPTION
+
+  Khepera Simulator is a simulation tool as well as a Khepera robot driver.
+  It is presented as a package including C sources to be compiled and linked
+  with your own C or C++ programs. To drive the simulator, you just need to
+  fill in the C functions given in the file user.c and to compile it using the
+  makefile also provided. Please see the examples in the directory EXAMPLES.
+
+  Khepera Simulator uses a X11 color graphical interface with buttons.
+
+  Khepera Simulator includes a world editor, a robot sensors viewer, and user
+  area where you can write and draw anything.
+
+  The simulator makes use of the 8 infrared sensors of the robots for distance
+  measurements as well as light measurements. It drives the two motors of the
+  robot and detects collisions with obstacles.
+
+  To code your own algorithm to drive the simulated / real robot, you should
+  read the tutorial given in the DOCS directory. A user manual is also
+  available in this directory (postcript versions as well as a text version
+  are available).
+
+
+NAME
+
+  sim - Khepera Simulator binary executable
+
+
+SYNTAX
+
+  sim [options]
+
+
+FLAGS
+
+  -s  simulation only (do not make use of the serial link for the real Khepera)
+  -p  simulated serial mode (see example 4 for using this option)
+
+
+INITIALIZATION FILES
+
+  .simrc contains 3 important paramters:
+  KHEPERA_AVAILABLE: may be TRUE or FALSE, depending if a real Khepera robot is
+                     connected or not.
+  SERIAL_PORT:       is serial port device to which the robot is connected
+                     (if available). It could be /dev/ttya, /dev/ttyb or
+                     /dev/tty00 depending on the workstation and the ports you
+                     use.
+                     This value is used only when KHEPERA_AVAILABLE is TRUE.
+  MONODISPLAY:       may be TRUE or FALSE according to the type of screen used.
+
+
+HISTORY
+
+  November 15, 1995: Khepera Simulator version 1.0 (first freeware release)
+
+  March     1, 1996: Khepera simulator version 2.0 (second freeware release)
+
+    o The IR distance sensor model was improved and is now more relevant
+      comparing to the real sensor and more efficent in computational power.
+    o The random generator was made more standard to work on LINUX and some
+      other systems (thanks to Nils Hulth).
+    o The grey colors were a bit changed to fit with some HP workstations
+      (idea: Edmund Ronald)
+    o The serial communication module was modified to run on the same HP
+      workstations (thanks to Marc Schoenauer).
+    o New examples of efficient robots were added in example 2: big.robot and
+      leaning.robot (idea: Edmund Ronald, Jari Vaario).
+    o The manual was updated.
+    o This readme file was modified (idea: Jari Vaario).
+    o The makefile was modified for an easy modification of the lib and
+      include directories (idea: Jari Vaario). A make clean capability was
+      added.
+    o The set angle command is now a standard command (idea: Jari Vaario).
+    o The examples installation files were modified.
+    o A multi-agent module was included (example 3, designed by Manuel
+      Clergue <clerguem@alto.unice.fr>).
+    o A simulated serial device module was added (example 4). This module is
+      especially useful if you already developped a program sending serial
+      commands to a real Khepera through the serial link of your computer. It
+      allows to redirect these commands to Khepera Simulator (idea: Jean-Yves
+      Tigli).
+
+
+AUTHOR
+
+  Copyright (c) 1995, 1996
+  Olivier MICHEL <om@alto.unice.fr>
+  MAGE team, i3S laboratory,
+  CNRS, University of Nice - Sophia Antipolis, FRANCE
+
+
+NOTE
+
+  Permission is hereby granted to copy this package for free distribution.
+  The author's name and this copyright notice must be included in any copy.
+  Commercial use is forbidden.
+
+

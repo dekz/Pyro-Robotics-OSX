@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/pyrobot/!svn/ver/2550/trunk/camera/rovio
+END
+RWLock.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2548/trunk/camera/rovio/RWLock.cpp
+END
+RovioLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/2549/trunk/camera/rovio/RovioLib.cpp
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/2550/trunk/camera/rovio/__init__.py
+END
+jpeg.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/2548/trunk/camera/rovio/jpeg.c
+END
+RWLock.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2548/trunk/camera/rovio/RWLock.h
+END
+Socket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2548/trunk/camera/rovio/Socket.cpp
+END
+Makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2548/trunk/camera/rovio/Makefile.linux
+END
+RovioLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2549/trunk/camera/rovio/RovioLib.h
+END
+jpeg.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/2548/trunk/camera/rovio/jpeg.h
+END
+Makefile.mac
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/2548/trunk/camera/rovio/Makefile.mac
+END
+RovioLib.i
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2549/trunk/camera/rovio/RovioLib.i
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2548/trunk/camera/rovio/Makefile
+END
+Socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2548/trunk/camera/rovio/Socket.h
+END

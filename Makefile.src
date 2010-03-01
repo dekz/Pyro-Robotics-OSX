@@ -1,0 +1,29 @@
+# Pyrobot - Python Robotics Config Script
+# Please edit Makefile.cfg or run "make config"
+
+# -----------------------------------------------------
+# You shouldn't need to change anything below this line
+# -----------------------------------------------------
+
+PYROBOT_VERSION = 5.0.2
+PYROBOT_DEFINE = -DPYROBOT_VERSION=\"$(PYROBOT_VERSION)\"
+
+.PHONY: $(SUBDIRS) clean all
+
+all:: $(SUBDIRS) $(OBJS)
+
+$(SUBDIRS):
+	(cd ./$@ && $(MAKE))
+
+clean::
+	- $(RM) *.o *.bak core *~ $(OBJS) *.so *module.c *.pyc $(CLEAN)
+	- $(RM) `find . | grep \.pyc$$`
+	- $(RM) `find . | grep ~$$`
+	- $(RM) `find . | grep \.rpo$$`
+ifeq ($(SUBDIRS),)
+else
+	@for i in $(SUBDIRS); do\
+		(cd ./$$i; $(MAKE) clean); \
+	done
+endif
+

@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/2522/trunk/brain/psom/csom_src/som_pak-dev
+END
+ex.cod
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/ex.cod
+END
+ex.nvs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/ex.nvs
+END
+lvq_pak.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/lvq_pak.h
+END
+labels.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pyrobot/!svn/ver/1103/trunk/brain/psom/csom_src/som_pak-dev/labels.c
+END
+ex.dat
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/ex.dat
+END
+test_devrobs.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/pyrobot/!svn/ver/1103/trunk/brain/psom/csom_src/som_pak-dev/test_devrobs.c
+END
+VERSION
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/VERSION
+END
+ex_fdy.dat
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/ex_fdy.dat
+END
+umat.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/umat.c
+END
+labels.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/labels.h
+END
+datafile.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pyrobot/!svn/ver/1096/trunk/brain/psom/csom_src/som_pak-dev/datafile.c
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/config.h
+END
+umat.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/umat.h
+END
+ex_ndy.dat
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/ex_ndy.dat
+END
+datafile.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/datafile.h
+END
+ex_fts.dat
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/ex_fts.dat
+END
+errors.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/errors.h
+END
+planes.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/planes.c
+END
+som_devrobs.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/pyrobot/!svn/ver/1106/trunk/brain/psom/csom_src/som_pak-dev/som_devrobs.c
+END
+vcal.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/vcal.c
+END
+som_devrobs.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/pyrobot/!svn/ver/1103/trunk/brain/psom/csom_src/som_pak-dev/som_devrobs.h
+END
+header.ps
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/header.ps
+END
+mapinit.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/mapinit.c
+END
+visual.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/visual.c
+END
+vfind.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/vfind.c
+END
+fileio.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pyrobot/!svn/ver/2517/trunk/brain/psom/csom_src/som_pak-dev/fileio.c
+END
+som_rout.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pyrobot/!svn/ver/613/trunk/brain/psom/csom_src/som_pak-dev/som_rout.c
+END
+qerror.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/qerror.c
+END
+fileio.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pyrobot/!svn/ver/2517/trunk/brain/psom/csom_src/som_pak-dev/fileio.h
+END
+som_rout.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/som_rout.h
+END
+map.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pyrobot/!svn/ver/739/trunk/brain/psom/csom_src/som_pak-dev/map.c
+END
+vsom.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/vsom.c
+END
+version.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/version.c
+END
+ex.fvs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/ex.fvs
+END
+header.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/header.c
+END
+sammon.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/sammon.c
+END
+version.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/version.h
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/pyrobot/!svn/ver/1618/trunk/brain/psom/csom_src/som_pak-dev/makefile
+END
+median.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/517/trunk/brain/psom/csom_src/som_pak-dev/median.c
+END
+lvq_pak.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pyrobot/!svn/ver/2522/trunk/brain/psom/csom_src/som_pak-dev/lvq_pak.c
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/1977/trunk/plugins/brains/Learning
+END
+deploy.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pyrobot/!svn/ver/1951/trunk/plugins/brains/Learning/deploy.py
+END
+train.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/1880/trunk/plugins/brains/Learning/train.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pyrobot/!svn/ver/1977/trunk/plugins/brains/Learning/__init__.py
+END
+avoid.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/1948/trunk/plugins/brains/Learning/avoid.py
+END
+collect.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/1951/trunk/plugins/brains/Learning/collect.py
+END

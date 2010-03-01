@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/pyrobot/!svn/ver/1880/trunk/tools/mpi
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/1776/trunk/tools/mpi/__init__.py
+END
+allocate.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/1880/trunk/tools/mpi/allocate.py
+END

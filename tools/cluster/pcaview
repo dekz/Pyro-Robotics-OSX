@@ -1,0 +1,322 @@
+#!/usr/bin/env python
+
+"""
+pcaview: Principal Component Viewer
+
+usage: pcaview [OPTIONS] "PATTERN" [[NAMES] [EIGENFILE]]
+
+OPTIONS:
+  -h         This message
+  -t STEP    Step size for pattern. Default is 25.
+  -s START   Start number for pattern. Default is 0.
+
+PATTERN:
+  a file skeleton for the sequence of vectors to plot. Question mark
+  is the sequence number. Use more than one for zero padding. Use
+  double quotes to prevent shell from expanding.
+
+  Examples:
+     "file?.txt" -t 1 would match file0.txt, file1.txt, ...
+     "data-???" -t 10 would match data-000, data-010, ...
+
+NAMES:
+  Optional file listing individual vector names. Will default to
+  autonames.txt which wil be created with names 1 through N.
+
+EIGENFILE:
+  Option eigenvector file to use for computing the PCAs. If not given,
+  will default to the last one in sequence. If EIGENFILE is given,
+  NAMES file must also be given.
+
+TODO and NOTES:
+  - ability to change scale, colors
+  - depends on PYROBOT environment variable.
+  - creates .pca and .ev files in directory of the data
+"""
+
+import re, os, sys
+
+# add pca to system search path:
+os.environ["PATH"] += ":" + os.environ["PYROBOT"] + "/tools/cluster"
+spare = ''
+path = os.environ["PYROBOT"] 
+while spare == '':
+   (path,spare) = os.path.split(path) # peel off pyrobot dir
+sys.path.insert(0, path) # add PYROBOT to PYTHON search path
+
+import Tkinter
+from posixpath import exists
+from pyrobot.gui.widgets import TKwidgets
+
+def ask(root, title, qlist):
+   d = TKwidgets.AskDialog(root, title, qlist)
+   d.top.bind("<Return>", lambda event: d.OkPressed())
+   ok = d.Show()
+   if ok:
+      retval = {"ok": 1}
+      for (name, value) in qlist:
+         retval[name] = d.textbox[name].get()
+      d.DialogCleanup()
+      return retval
+   else:
+      d.DialogCleanup()
+      return {"ok" : 0}
+
+class PCAViewer(Tkinter.Toplevel):
+    def __init__(self, pattern, namefile, eigens = None,
+                 start = 0, step = 25):
+        # Graphics stuff:
+        self.root = Tkinter.Tk()
+        self.root.withdraw()
+        Tkinter.Toplevel.__init__(self, self.root)
+        self.title("pcaview: %s" % pattern)
+        self.protocol('WM_DELETE_WINDOW', lambda :sys.exit(0))
+        self.mBar = Tkinter.Frame(self, relief=Tkinter.RAISED, borderwidth=2)
+        self.mBar.pack(fill=Tkinter.X)
+        self.menuButtons = {}
+        menu = [
+            ('File', [['Help', self.help],
+                      ['Exit', lambda : sys.exit(0)]]),
+            ('Options',[['Set PCAs to plot...', self.setPCA],
+                        ['Set Eigen Vector File', self.setEV],
+                        ['Toggle History Trail', self.toggleHistory],
+                        ['Clear History Trail', self.clearHistory],
+                        ]
+             ),
+            ]
+        for entry in menu:
+            self.mBar.tk_menuBar(self.makeMenu(self.mBar, entry[0], entry[1]))
+        self.frame = Tkinter.Frame(self)
+        self.frame.pack(side = 'bottom', expand = "yes", anchor = "n",
+                        fill = 'both')
+        self.canvas = Tkinter.Canvas(self.frame, bg="white")
+        self.scrollbar = Tkinter.Scrollbar(self.frame, orient="h", command=self.scroll)
+        self.canvas.pack(expand="yes", fill="both", side="top", anchor="n")
+        self.scrollbar.pack(expand="no", fill="x", side="bottom", anchor="s")
+        # -----------------------------------------
+        wildcard = "?"
+        self.namefile = namefile
+        self.current = start
+        self.pattern = pattern
+        self.step = step
+        self.filenames = []
+        self.eigenvector = {}
+        self.eigenfile = None
+        self.position = {}
+        self.names = []
+        self.pca = [1, 2]
+        self.coordinates = []
+        self.last = {}
+        self.displayNames = 1
+        self.lastPrint = ""
+        self.history = 0
+        # -------------------- Look for the files:
+        match = re.search(re.escape(wildcard) + "+", pattern)
+        if match:
+            while 1:
+                fstring = "%%0%dd" % len(match.group())
+                currname = pattern[:match.start()] + \
+                           fstring % self.current + \
+                           pattern[match.end():]
+                if exists(currname):
+                    self.filenames.append(currname)
+                    self.current += self.step
+                else:
+                    break
+        else:
+            self.filenames.append(pattern)
+        print "PCAView:"
+        # -------------------- Read the files:
+        self.fileCount = len(self.filenames)
+        self.data = []
+        for i in range(self.fileCount):
+            print ("   reading patterns '%s'..." % self.filenames[i]),
+            fp = open(self.filenames[i], "r")
+            row = 0
+            values = 0
+            array = []
+            for line in fp:
+                data = map(float, line.strip().split())
+                array.append(data)
+                row += 1
+                values += len(data)
+            self.data.append(array)
+            print "%d rows, %d values" % (row, values)
+            fp.close()
+        if self.namefile == None:
+            print "Making autonames.txt..."
+            fp = open("autonames.txt", "w")
+            for i in range(len(self.data[0])):
+                print >> fp, (i+1)
+            fp.close()
+            self.namefile = "autonames.txt"
+        # --------------------- Read the names:
+        print ("   reading names '%s'..." % self.namefile), 
+        fp = open(self.namefile, "r")
+        row = 0
+        for line in fp:
+            name = line.strip()
+            self.position[name] = row
+            self.names.append(name)
+            row += 1
+        fp.close()
+        print "%d names" % (row,)
+        # ---------------------- Read the eigen vectors
+        if eigens != None:
+            self.setEigens(eigens)
+        else:
+            print "Creating eigenvectors for all",
+            for file in self.filenames:
+                os.system("pca -e %s.ev %s %s > /dev/null" % (file, file, self.namefile))
+                print ".",
+            print
+            self.setEigens(self.filenames[-1] + ".ev")
+    def help(self):
+        print __doc__
+    def setPCA(self):
+        retval = ask(self.root, "Set PCA", (("X", self.pca[0]), ("Y", self.pca[1])))
+        if retval["ok"]:
+            self.pca = [int(retval["X"]), int(retval["Y"])]
+            self.last = {}
+            self.lastTimeFrame = ""
+            self.scroll("moveto", 0, 0)
+    def setEV(self):
+        retval = ask(self.root, "Set Eigen vector file", (("File", self.eigenfile),))
+        if retval["ok"]:
+            self.setEigens(retval["File"])
+            self.last = {}
+            self.lastTimeFrame = ""
+            self.scroll("moveto", 0, 0)
+    def setEigens(self, eigenfile):
+        self.eigenfile = eigenfile
+        # --------------------- Read the basis:
+        print ("   reading eigens '%s'..." % self.eigenfile), 
+        fp = open(self.eigenfile, "r")
+        row = 0
+        values = 0
+        self.eigenvector = []
+        for line in fp:
+            data = line.strip().split()
+            self.eigenvector.append(map(float, data))
+            values = len(data)
+            row += 1
+        fp.close()
+        print "%d x %d matrix" % (row, values)
+        print "Generating pca files",
+        for file in self.filenames:
+            os.system("pca -e %s %s %s > %s.pca" % (self.eigenfile, file, self.namefile, file))
+            print ".",
+        print
+        print "Reading pca files",
+        self.coordinates = []
+        for file in self.filenames:
+            array = []
+            fp = open("%s.pca" % file, "r")
+            for line in fp:
+                data = map(float, line.strip().split()[:-1])
+                array.append( data )
+            print ".",
+            fp.close()
+            self.coordinates.append( array )
+        print
+        self.scrollbar.set(0.0, 1.0/len(self.filenames))
+    def toggleHistory(self):
+        self.history = not self.history
+        self.clearHistory()
+    def clearHistory(self):
+        self.canvas.delete("line")
+        self.last = {}
+    def makeMenu(self, bar, name, commands):
+        """ Assumes self.menuButtons exists """
+        menu = Tkinter.Menubutton(bar,text=name,underline=0)
+        self.menuButtons[name] = menu
+        menu.pack(side=Tkinter.LEFT,padx="2m")
+        menu.filemenu = Tkinter.Menu(menu)
+        for cmd in commands:
+            if cmd:
+                menu.filemenu.add_command(label=cmd[0],command=cmd[1])
+            else:
+                menu.filemenu.add_separator()
+        menu['menu'] = menu.filemenu
+        return menu
+    def scroll(self, command, *args):
+        timeframe = 0
+        if command == "moveto":
+            timeframe = int(float(args[0]) * len(self.filenames))
+        elif command == "scroll":
+            if args[1] == "units":
+                start, stop = self.scrollbar.get()
+                if args[0] == '1':
+                    timeframe = int(float(stop) * len(self.filenames)) + 1
+                else:
+                    timeframe = int(float(stop) * len(self.filenames)) - 1
+            elif args[1] == "pages":
+                print "pages"
+        timeframe = max(0, min(timeframe, len(self.filenames) - 1))
+        if timeframe != self.lastTimeFrame:
+            self.plot(timeframe)
+            self.scrollbar.set( float(timeframe)/len(self.filenames), float(timeframe)/len(self.filenames) + 1.0/len(self.filenames))
+    def mouseOver(self, event, name):
+        if self.lastPrint != name:
+            print "data #", name
+            self.lastPrint = name
+    def plot(self, timeframe = 0):
+        self.lastTimeFrame = timeframe
+        coord = self.coordinates[timeframe]
+        if self.history:
+            self.canvas.delete("dot")
+        else:
+            self.canvas.delete("all")            
+        for name in self.names:
+            pos = self.position[name]
+            if int(name) <= 16:
+                color = "red"
+            else:
+                color = "green"
+            x, y = map(self.scale, (coord[pos][self.pca[0]-1], coord[pos][self.pca[1]-1]))
+            if name in self.last:
+                x1, y1 = self.last[name]
+                self.canvas.create_line(x1, y1, x, y, tags=("line%s" % name, "line"))
+                self.canvas.tag_bind("line%s" % name, "<Enter>", func=lambda event,name=name:self.mouseOver(event, name))
+            self.canvas.create_oval(x-3, y-3, x+3, y+3,
+                                    fill=color, width=1, tags=("dot%s" % name, "dot"))
+            self.canvas.tag_bind("dot%s" % name, "<Enter>", func=lambda event,name=name:self.mouseOver(event, name))
+            self.last[name] = x, y
+        self.canvas.tag_lower("line")
+        self.update()
+    def scale(self, v):
+        return (v + 1.5) * 600/3 
+
+if __name__ == "__main__":
+    # Defaults:
+    step = 25
+    start = 0
+    # Flags in the input:
+    if "-h" in sys.argv:
+        print __doc__
+        sys.exit(0)
+    if "-t" in sys.argv:
+        pos = sys.argv.index("-t")
+        sys.argv.pop(pos)
+        step = int(sys.argv.pop(pos))
+    if "-s" in sys.argv:
+        pos = sys.argv.index("-s")
+        sys.argv.pop(pos)
+        start = int(sys.argv.pop(pos))
+    # handle mode by number of arguments:
+    if len(sys.argv) == 2:
+        vectors = sys.argv[1]
+        names = None
+        eigens = None
+    if len(sys.argv) == 3:
+        vectors = sys.argv[1]
+        names = sys.argv[2]
+        eigens = None
+    elif len(sys.argv) == 4:
+        vectors = sys.argv[1]
+        names = sys.argv[2]
+        eigens = sys.argv[3]
+    # Create, plot, and loop:
+    v = PCAViewer(vectors, names, eigens, start = start, step = step)
+    v.plot()
+    v.mainloop()

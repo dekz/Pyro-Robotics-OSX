@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/pyrobot/!svn/ver/2543/trunk/brain/psom
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2543/trunk/brain/psom/__init__.py
+END
+vis.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/pyrobot/!svn/ver/2543/trunk/brain/psom/vis.py
+END
+visvector.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/1880/trunk/brain/psom/visvector.py
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/1618/trunk/brain/psom/makefile
+END

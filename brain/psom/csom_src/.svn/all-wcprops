@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/2534/trunk/brain/psom/csom_src
+END
+ex.cod
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/518/trunk/brain/psom/csom_src/ex.cod
+END
+som_pak.i
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/1103/trunk/brain/psom/csom_src/som_pak.i
+END
+ex.dat
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/518/trunk/brain/psom/csom_src/ex.dat
+END
+test_csom.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/1880/trunk/brain/psom/csom_src/test_csom.py
+END
+makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/2526/trunk/brain/psom/csom_src/makefile.linux
+END
+makefile.mac
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2520/trunk/brain/psom/csom_src/makefile.mac
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2534/trunk/brain/psom/csom_src/makefile
+END

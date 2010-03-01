@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<gz:world xmlns:gz="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz" xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" xmlns:window="http://playerstage.sourceforge.net/gazebo/xmlschema/#window" xmlns:params="http://playerstage.sourceforge.net/gazebo/xmlschema/#params">
+
+  <model:LightSource>
+    <id>light1</id>
+    <xyz>-10.000 10.000 10.000</xyz>
+  </model:LightSource>
+
+  <model:ObserverCam>
+    <id>userCam0</id>
+    <xyz>-1.586 1.959 1.897</xyz>
+    <rpy>-0 35 -84</rpy>
+    <displayAxes>false</displayAxes>
+    <displayCoM>false</displayCoM>
+    <imageSize>640 480</imageSize>
+  </model:ObserverCam>
+
+  <model:GroundPlane>
+    <id>ground1</id>
+  </model:GroundPlane>
+
+  <model:SimpleSolid>
+    <xyz>0.000 0.000 -0.005</xyz>
+    <shape>box</shape>
+    <size>2 2 0.50</size>
+    <color>1.0 1.0 1.0</color>
+    <mass>10000</mass>
+  </model:SimpleSolid>
+
+  <model:SegwayRMP>
+    <id>robot1</id>
+    <xyz>-2.067 -0.000 0.003</xyz>
+    <rpy>-0 1 0</rpy>
+    <model:SickLMS200>
+      <id>laser1</id>
+      <parentBody>topPlate</parentBody>
+      <xyz>0 0 0.05</xyz> 
+    </model:SickLMS200>
+  </model:SegwayRMP>
+
+</gz:world>

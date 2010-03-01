@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/pyrobot/!svn/ver/2520/trunk/camera/v4l
+END
+grabImage.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/1203/trunk/camera/v4l/grabImage.c
+END
+V4L.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/2235/trunk/camera/v4l/V4L.cpp
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2520/trunk/camera/v4l/__init__.py
+END
+V4L.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pyrobot/!svn/ver/2235/trunk/camera/v4l/V4L.h
+END
+V4L.i
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pyrobot/!svn/ver/1996/trunk/camera/v4l/V4L.i
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/1618/trunk/camera/v4l/Makefile
+END

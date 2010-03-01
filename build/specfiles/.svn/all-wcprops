@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/2439/trunk/build/specfiles
+END
+player-NOTES
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2435/trunk/build/specfiles/player-NOTES
+END
+player-2.spec
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/2439/trunk/build/specfiles/player-2.spec
+END
+player.spec
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/player.spec
+END
+python-mdp-1.spec
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/python-mdp-1.spec
+END
+pyrobot-4.0.spec
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/pyrobot-4.0.spec
+END
+python-mdp-2.spec
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/python-mdp-2.spec
+END
+proj4.spec
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/proj4.spec
+END
+pyrobot-4.2.spec
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/pyrobot-4.2.spec
+END
+stage-2.spec
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2439/trunk/build/specfiles/stage-2.spec
+END
+opencv-0.9.6.spec
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/opencv-0.9.6.spec
+END
+stage.spec
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/stage.spec
+END
+pyrobot-4.6.spec
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/pyrobot-4.6.spec
+END
+pyrobot-4.8.spec
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/pyrobot-4.8.spec
+END
+pyrobot-4.8.2.spec
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/pyrobot-4.8.2.spec
+END
+python-scipy.spec
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/python-scipy.spec
+END
+gdal-1.3.2.spec
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/gdal-1.3.2.spec
+END
+ode-0.5.spec
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/ode-0.5.spec
+END
+ode-0.6.spec
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/ode-0.6.spec
+END
+gazebo-0.6.spec
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/gazebo-0.6.spec
+END
+gazebo-0.7.spec
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/2439/trunk/build/specfiles/gazebo-0.7.spec
+END
+lib3ds-1.2.0.spec
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/lib3ds-1.2.0.spec
+END
+numpy-0.9.8.spec
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2434/trunk/build/specfiles/numpy-0.9.8.spec
+END

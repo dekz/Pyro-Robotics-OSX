@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/pyrobot/!svn/ver/2482/trunk/aima
+END
+nlp.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pyrobot/!svn/ver/1626/trunk/aima/nlp.py
+END
+games.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/2482/trunk/aima/games.py
+END
+logic.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/1626/trunk/aima/logic.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pyrobot/!svn/ver/1626/trunk/aima/__init__.py
+END
+boggle.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/1626/trunk/aima/boggle.py
+END
+learning.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pyrobot/!svn/ver/1626/trunk/aima/learning.py
+END
+py2html.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/1626/trunk/aima/py2html.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/1626/trunk/aima/utils.py
+END
+docex.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/1626/trunk/aima/docex.py
+END
+search.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/1626/trunk/aima/search.py
+END
+planning.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pyrobot/!svn/ver/1626/trunk/aima/planning.py
+END
+rl.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/pyrobot/!svn/ver/1626/trunk/aima/rl.py
+END
+logic1.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/1626/trunk/aima/logic1.py
+END
+mdp.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pyrobot/!svn/ver/1626/trunk/aima/mdp.py
+END
+probability.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/1626/trunk/aima/probability.py
+END
+agents.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/1677/trunk/aima/agents.py
+END
+text.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/pyrobot/!svn/ver/1626/trunk/aima/text.py
+END
+csp.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pyrobot/!svn/ver/1626/trunk/aima/csp.py
+END
+python23.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pyrobot/!svn/ver/1626/trunk/aima/python23.py
+END

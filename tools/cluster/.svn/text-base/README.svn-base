@@ -1,0 +1,138 @@
+
+Compile:
+	cc -O -o cluster cluster.c alloc.c -lm
+
+Use:
+	cluster [vectors] [names]
+
+where 'vectors' is the file containing vectors to be clustered,
+and 'names' is a file containing the name of each vector.
+
+Vectors should be organized one per line, => with a trailing blank before
+the carriage return.  Names should be organized similarly; the order
+of vectors/names should be the same in both files.
+
+'names' is a sample names file; 'vector' is a sample vector file.  Note that
+whereas names must not have any embedded white space, elements in vectors
+must be separated by white space.
+
+
+----
+
+The program has been enhanced with numerous options to make it more
+flexible in interfacing with other applications.  See the the man page for
+details.
+
+To generate the program, edit the Makefile according to your preferences
+and type `make'.  It is know to compile and run os Sun3 and Sun4 systems
+under SunOS 3.5 and 4.1.
+
+Comments and bug fixes requested.
+
+Andreas Stolcke (stolcke@icsi.berkeley.edu)
+10/12/90
+
+-----
+
+The second enhanced release has even more options and supports principal
+component analysis.
+
+RTFM page !!!
+
+A. Stolcke
+4/20/91
+
+-----
+
+The first release after beta testing (nobody found the glaring bug in the
+memory allocation macro ...) has curses support added.
+
+A. Stolcke
+7/14/91
+
+-----
+
+New in release 2.3:
+
+* Eigenvectors are now stored one-per-line, so as to be compatible with
+  input/output format.  Old eigenbases will have to recomputed, or the 
+  contents of files used with -e can be transposed.
+* A new option, -E, allows printing the eigenvalues determined in PCA.
+
+A. Stolcke
+2/11/92
+
+----
+
+New in release 2.4:
+
+* Saved some unnecessary memory allocation for patterns.
+* Distance matrix needs only 1/2 the space it used before (this is the
+  bulk of total memory size, so big win here).
+* 20% runtime improvement by making a trivial change in the way the
+  distance matrix is scanned.
+
+A. Stolcke
+1/15/93
+
+---
+
+New in release 2.5:
+
+* Cluster implementation changed to use O(n^2) time and O(n) memory
+  (was O(n^3) and O(n^2), respectively).
+* Added BENCHMARKS file and test/ subdirectory.
+
+A. Stolcke
+1/20/93
+
+* Added some info about the cluster algorithm, to be found in the
+  ALGORITHM file.
+
+A. Stolcke
+1/21/93
+
+---
+
+New in release 2.6:
+
+* Cluster output as binary code vectors (-B option).
+
+A. Stolcke
+2/2/93
+
+----
+
+New in release 2.7:
+
+* Use IEEE NaN instead of infinity for D/C value representation
+* Include test program to verify that it works (make testm).
+
+This version has been tested on
+
+	Sun4/SunOS4.1.x,
+	DECstation/Ultrix4.3
+	NeXT/Release 2.1
+	HP 9000s700/HP-UX 8.07
+
+A. Stolcke
+3/1/93
+
+---
+
+New in release 2.8:
+
+* Included MAIL from fmurtagh@eso.org with more background info about
+  clustering algorithms and other software packages.
+
+A. Stolcke
+4/28/93
+
+
+New in release 2.9:
+
+* Fixed a memory (de)allocation bug in pca, found by Nici Schraudolph.
+
+A. Stolcke
+1/10/96
+

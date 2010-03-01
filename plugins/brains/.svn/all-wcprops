@@ -1,0 +1,347 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/2568/trunk/plugins/brains
+END
+RLBrain.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/2037/trunk/plugins/brains/RLBrain.py
+END
+SimpleWander.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/SimpleWander.py
+END
+SOMWander.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1880/trunk/plugins/brains/SOMWander.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/271/trunk/plugins/brains/__init__.py
+END
+BlimpScavenger.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2378/trunk/plugins/brains/BlimpScavenger.py
+END
+Avoid.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2128/trunk/plugins/brains/Avoid.py
+END
+FSMPushPop.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/FSMPushPop.py
+END
+BBTest2.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/1880/trunk/plugins/brains/BBTest2.py
+END
+SimpleBrain.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/1880/trunk/plugins/brains/SimpleBrain.py
+END
+AiboFindBall.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/2041/trunk/plugins/brains/AiboFindBall.py
+END
+BBCapture.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/BBCapture.py
+END
+VisionTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/VisionTest.py
+END
+BraitenbergVehicle4.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/2078/trunk/plugins/brains/BraitenbergVehicle4.py
+END
+BraitenbergVehicle2b.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pyrobot/!svn/ver/2078/trunk/plugins/brains/BraitenbergVehicle2b.py
+END
+BraitenbergVehicle3b.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pyrobot/!svn/ver/2078/trunk/plugins/brains/BraitenbergVehicle3b.py
+END
+RAVQ.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/RAVQ.py
+END
+NNFindBlob.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2109/trunk/plugins/brains/NNFindBlob.py
+END
+BraitenbergTimid.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/2079/trunk/plugins/brains/BraitenbergTimid.py
+END
+NNRandom.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1951/trunk/plugins/brains/NNRandom.py
+END
+NNCluster.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1951/trunk/plugins/brains/NNCluster.py
+END
+rovioTrackBall.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2568/trunk/plugins/brains/rovioTrackBall.py
+END
+BlimpCompetition.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/2378/trunk/plugins/brains/BlimpCompetition.py
+END
+Test.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2492/trunk/plugins/brains/Test.py
+END
+Wander.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/Wander.py
+END
+BBTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/1880/trunk/plugins/brains/BBTest.py
+END
+BBWander.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1951/trunk/plugins/brains/BBWander.py
+END
+FuzzyPTZ.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/FuzzyPTZ.py
+END
+Subsumption.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/Subsumption.py
+END
+KonanePlayer.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/1975/trunk/plugins/brains/KonanePlayer.py
+END
+BlimpRecorder.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/2282/trunk/plugins/brains/BlimpRecorder.py
+END
+BBWanderAndCapture.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/BBWanderAndCapture.py
+END
+JoystickMap.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/1954/trunk/plugins/brains/JoystickMap.py
+END
+Develop.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/Develop.py
+END
+Joystick.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1880/trunk/plugins/brains/Joystick.py
+END
+BBOffice.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/BBOffice.py
+END
+LPSWander.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1951/trunk/plugins/brains/LPSWander.py
+END
+TrackBall.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2042/trunk/plugins/brains/TrackBall.py
+END
+SOMAA.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/1880/trunk/plugins/brains/SOMAA.py
+END
+LineFollower.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/2380/trunk/plugins/brains/LineFollower.py
+END
+BlobTrack.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/BlobTrack.py
+END
+BBSquare.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/BBSquare.py
+END
+NNPredictWithPlots.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pyrobot/!svn/ver/1951/trunk/plugins/brains/NNPredictWithPlots.py
+END
+BraitenbergVehicle1.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/pyrobot/!svn/ver/2078/trunk/plugins/brains/BraitenbergVehicle1.py
+END
+FSMSquare.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/FSMSquare.py
+END
+BlimpImageTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2287/trunk/plugins/brains/BlimpImageTest.py
+END
+BraitenbergVehicle2a.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pyrobot/!svn/ver/2078/trunk/plugins/brains/BraitenbergVehicle2a.py
+END
+BraitenbergVehicle3a.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/pyrobot/!svn/ver/2078/trunk/plugins/brains/BraitenbergVehicle3a.py
+END
+CamMover.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/CamMover.py
+END
+AiboSoccer.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/AiboSoccer.py
+END
+NNWander.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1951/trunk/plugins/brains/NNWander.py
+END
+BlimpBrain.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2287/trunk/plugins/brains/BlimpBrain.py
+END
+KLight.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/KLight.py
+END
+Slider.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/1880/trunk/plugins/brains/Slider.py
+END
+ReflexVacuumAgent.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/ReflexVacuumAgent.py
+END
+NNPredict.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2456/trunk/plugins/brains/NNPredict.py
+END
+CleanUp.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/1933/trunk/plugins/brains/CleanUp.py
+END
+NNBrain.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/2340/trunk/plugins/brains/NNBrain.py
+END

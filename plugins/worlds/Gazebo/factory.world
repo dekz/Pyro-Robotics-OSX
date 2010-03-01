@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<gz:world 
+  xmlns:gz='http://playerstage.sourceforge.net/gazebo/xmlschema/#gz'
+  xmlns:model='http://playerstage.sourceforge.net/gazebo/xmlschema/#model'
+  xmlns:sensor='http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor'
+  xmlns:window='http://playerstage.sourceforge.net/gazebo/xmlschema/#window'
+  xmlns:params='http://playerstage.sourceforge.net/gazebo/xmlschema/#params'>
+
+  <params:GlobalParams>
+    <gravity>0.0 0.0 -9.8</gravity>
+  </params:GlobalParams>
+
+  <model:ObserverCam>
+    <id>userCam0</id>
+
+    <xyz>0 0 20</xyz>
+    <rpy>0 30 0</rpy>
+
+    <imageSize>640 480</imageSize>
+  </model:ObserverCam>
+  
+   <model:LightSource>
+    <id>0</id>
+    <xyz>0 0 40</xyz>
+  </model:LightSource>
+
+ <model:GroundPlane>
+    <id>ground1</id>
+    <color>0.5 0.5 0.5</color>
+    <textureFile>grid.ppm</textureFile>
+  </model:GroundPlane>
+
+  <model:Factory>
+    <id>factory1</id>
+  </model:Factory>
+
+
+</gz:world>
+

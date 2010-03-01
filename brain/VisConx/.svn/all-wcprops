@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/2020/trunk/brain/VisConx
+END
+ActivationsDiag.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2020/trunk/brain/VisConx/ActivationsDiag.py
+END
+NetStruct.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2020/trunk/brain/VisConx/NetStruct.py
+END
+VisSweepConx.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/2020/trunk/brain/VisConx/VisSweepConx.py
+END
+Hinton.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2020/trunk/brain/VisConx/Hinton.py
+END
+VisRobotConx.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/2020/trunk/brain/VisConx/VisRobotConx.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/48/trunk/brain/VisConx/__init__.py
+END
+HintonWrapper.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/2020/trunk/brain/VisConx/HintonWrapper.py
+END
+ArchDiag.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/2020/trunk/brain/VisConx/ArchDiag.py
+END
+TwoDimPlot.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2020/trunk/brain/VisConx/TwoDimPlot.py
+END
+VisConxBase.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2020/trunk/brain/VisConx/VisConxBase.py
+END

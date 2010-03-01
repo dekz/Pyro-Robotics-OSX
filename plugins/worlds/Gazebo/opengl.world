@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<gz:world xmlns:gz="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz" xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" xmlns:window="http://playerstage.sourceforge.net/gazebo/xmlschema/#window" xmlns:param="http://playerstage.sourceforge.net/gazebo/xmlschema/#param">
+
+  <model:LightSource>
+    <id>light0</id>
+    <xyz>-5.000 -5.000 10.000</xyz>
+  </model:LightSource>
+
+  <model:GroundPlane>
+    <id>ground1</id>
+    <color>0.5 0.5 0.5</color>
+    <textureFile>grid.ppm</textureFile>
+  </model:GroundPlane>
+
+  <model:Pioneer2AT>
+    <id>robot1</id>
+    <xyz>0.012 -0.005 -0.000</xyz>
+  </model:Pioneer2AT>
+
+  <model:ObserverCam>
+    <id>camera_auto</id>
+    <xyz>-1.395 -3.356 1.512</xyz>
+    <rpy>-0 13 71</rpy>
+    <imageSize>320 240</imageSize>
+    <updateRate>10</updateRate>
+    <renderMethod>ATIX</renderMethod>
+  </model:ObserverCam>
+
+  <model:ObserverCam>
+    <id>camera_auto</id>
+    <xyz>-1.395 -3.356 1.512</xyz>
+    <rpy>-0 13 71</rpy>
+    <imageSize>320 240</imageSize>
+    <updateRate>10</updateRate>
+    <renderMethod>auto</renderMethod>
+  </model:ObserverCam>
+
+  <model:ObserverCam>
+    <id>camera_glx</id>
+    <xyz>-1.395 -3.356 1.512</xyz>
+    <rpy>-0 13 71</rpy>
+    <imageSize>320 240</imageSize>
+    <updateRate>10</updateRate>
+    <renderMethod>glx</renderMethod>
+  </model:ObserverCam>
+
+  <model:ObserverCam>
+    <id>camera_xlib</id>
+    <xyz>-1.395 -3.356 1.512</xyz>
+    <rpy>-0 13 71</rpy>
+    <imageSize>320 240</imageSize>
+    <updateRate>10</updateRate>
+    <renderMethod>xlib</renderMethod>
+  </model:ObserverCam>
+
+</gz:world>

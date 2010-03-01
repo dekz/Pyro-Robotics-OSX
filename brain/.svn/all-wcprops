@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/pyrobot/!svn/ver/2576/trunk/brain
+END
+gov2spiral.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/2152/trunk/brain/gov2spiral.py
+END
+sequence1.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/2141/trunk/brain/sequence1.py
+END
+sumXor.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/2161/trunk/brain/sumXor.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/pyrobot/!svn/ver/2569/trunk/brain/__init__.py
+END
+governor.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/pyrobot/!svn/ver/2504/trunk/brain/governor.py
+END
+incrnet.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pyrobot/!svn/ver/2152/trunk/brain/incrnet.py
+END
+seqXor3.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pyrobot/!svn/ver/2553/trunk/brain/seqXor3.py
+END
+pysom.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/2020/trunk/brain/pysom.py
+END
+sequence.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/pyrobot/!svn/ver/2141/trunk/brain/sequence.py
+END
+rbf.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/pyrobot/!svn/ver/2020/trunk/brain/rbf.py
+END
+ravq.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/2239/trunk/brain/ravq.py
+END
+mushroom.data.gz
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2101/trunk/brain/mushroom.data.gz
+END
+cascor.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/2409/trunk/brain/cascor.py
+END
+gng.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/pyrobot/!svn/ver/2555/trunk/brain/gng.py
+END
+two-spiral.dat
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/2150/trunk/brain/two-spiral.dat
+END
+letters.50.in
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/2100/trunk/brain/letters.50.in
+END
+twospiral.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/2201/trunk/brain/twospiral.py
+END
+two-spiral.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/2150/trunk/brain/two-spiral.c
+END
+vconx.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/2361/trunk/brain/vconx.py
+END
+som.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/pyrobot/!svn/ver/2020/trunk/brain/som.py
+END
+seqXor2.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pyrobot/!svn/ver/2554/trunk/brain/seqXor2.py
+END
+gp.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pyrobot/!svn/ver/2020/trunk/brain/gp.py
+END
+govSRNXor.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/2553/trunk/brain/govSRNXor.py
+END
+conx.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/2576/trunk/brain/conx.py
+END
+td.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pyrobot/!svn/ver/2036/trunk/brain/td.py
+END
+xormedley.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/2189/trunk/brain/xormedley.py
+END
+qptwospirals.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2195/trunk/brain/qptwospirals.py
+END
+qpencoder.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/2329/trunk/brain/qpencoder.py
+END
+seqXor.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/2141/trunk/brain/seqXor.py
+END
+govXor.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/2152/trunk/brain/govXor.py
+END
+art.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/pyrobot/!svn/ver/2104/trunk/brain/art.py
+END
+fuzzy.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/2458/trunk/brain/fuzzy.py
+END
+ga.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pyrobot/!svn/ver/2488/trunk/brain/ga.py
+END

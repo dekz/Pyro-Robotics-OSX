@@ -1,0 +1,225 @@
+CLUSTER(L)                                             CLUSTER(L)
+
+
+
+NNAAMMEE
+       cluster, pca - Hierarchical Cluster Analysis and Principal
+       Component Analysis
+
+SSYYNNOOPPSSIISS
+       cclluusstteerr [_o_p_t_i_o_n_s] [_v_e_c_t_o_r_f_i_l_e [_n_a_m_e_s_f_i_l_e]]
+
+       ppccaa [_o_p_t_i_o_n_s] [_v_e_c_t_o_r_f_i_l_e [_n_a_m_e_s_f_i_l_e]]
+
+DDEESSCCRRIIPPTTIIOONN
+       CClluusstteerr performs Hierarchical Cluster Analysis (HCA) on  a
+       set of vectors and outputs the result in a variety of for­
+       mats on standard output.
+
+       PPccaa performs Principal Component Analysis (PCA) on  a  set
+       of  vectors  and  prints the transformed set of vectors on
+       standard output.
+
+       If _v_e_c_t_o_r_f_i_l_e is given it is read as the  file  containing
+       the vector data, one vector per line, components separated
+       by whitespace.  An optional  _n_a_m_e_s_f_i_l_e  can  be  given  to
+       assign  names (arbitrary strings) to these vectors.  Names
+       must be specified one per line,  matching  the  number  of
+       vectors  in  _v_e_c_t_o_r_f_i_l_e.  Names are either contiguous non-
+       whitespace characters or arbitrary strings delimited by an
+       initial double quote `"' and the end of line.
+
+       Vector  names may also be given in _v_e_c_t_o_r_f_i_l_e itself, fol­
+       lowing the vector components on each line.   If  no  names
+       are  provided,  vectors  in  the  output are identified by
+       their input sequence number instead.
+
+       Either of these files may be given as `--', indicating that
+       the corresponding information should be read from standard
+       input.  If no arguments are given standard input is  read,
+       allowing cclluusstteerr to be used as a filter.
+
+       CClluusstteerr  and  ppccaa  also provide a simple scaling facility.
+       If the first line of the input is terminated by  the  key­
+       word  `__SSCCAALLEE__'  it  is interpreted as a vector of scaling
+       factors.  The following lines are then  read  as  data  as
+       usual,  except  that  vector  components are multiplied by
+       their corresponding scaling factors.  To  specify  scaling
+       factors on the command line use
+            (echo _f_a_c_t_o_r_1 _f_a_c_t_o_r_2 ... _SCALE_ ; \
+            cat _v_e_c_t_o_r_f_i_l_e ) | cluster - [ _n_a_m_e_s_f_i_l_e ]
+
+       Yet another potentially useful feature is that vector com­
+       ponents may be specified as `DD//CC'  (don't  care),  meaning
+       that that component will always contribute zero in comput­
+       ing distances to other vectors.  In  PCA  mode,  each  D/C
+       value  is replaced by the mean of all non-D/C values along
+       its dimension.
+
+OOPPTTIIOONNSS
+       --pp     Force PCA mode, even when the program is called  as
+              cclluusstteerr.   (cclluusstteerr  and ppccaa are different incarna­
+              tions of the same program, depending on the  zeroth
+              argument.)
+
+       --ss     Suppress   scaling.    Vector  components  are  not
+              scaled, even if a __SSCCAALLEE__ line was found.  This  is
+              useful to produce both scaled and unscaled analyses
+              from the same input file.
+
+       --vv     Verbose output. Reports the number and dimension of
+              vectors  read and precedes each output section with
+              an explanatory message.  For ppccaa ,, execution of the
+              computational steps involved is reported.
+
+   CClluusstteerr oonnllyy
+       --dd     Output  all  pairs  of  clusters formed, along with
+              their respective inter-cluster distances.  Clusters
+              are given as lists of vectors.
+
+       --tt     Represent the hierarchical clusters as a tree lying
+              on its side.  The leaves of the tree are formed  by
+              vector  names,  and  the horizontal spacing between
+              nodes is  proportional  to  the  distances  between
+              clusters.   The  output uses only ASCII characters,
+              resulting in a rough approximation of the true pro­
+              portions.
+
+       --TT     Same  as  --tt but the cluster tree is displayed in a
+              ccuurrsseess(3) pad.  The terminal screen can be scrolled
+              around the tree representation.  Also, VT100 graph­
+              ics characters are used for line drawing if  avail­
+              able.   While  displaying  the  tree, the following
+              one-key commands can be used:
+              Home, H   Scroll to upper-left corner of window.
+              h, j, k, l, arrow keys
+                        Scroll left, down, up, right by one posi­
+                        tion.
+              Tab, BackTab
+                        Scroll right, left by 8 positions.
+              n, p      Sroll down, up by one page.
+              R         Redraw screen.
+              q         Quit the display.
+
+       --ww_w_i_d_t_h
+              Set the width of the tree representation used by --tt
+              and --TT to _w_i_d_t_h characters.  The default  width  is
+              80   or   the   terminal  width  as  determined  by
+              ccuurrsseess(3).  Wider trees are more difficult to  view
+              but  give  a more accurate picture of relative dis­
+              tances.
+
+       --gg     Same as --tt, but the graphical output  is  specified
+              in  a  format suitable for the UNIX ggrraapphh(1G) util­
+              ity, which allows further formatting such as bound­
+              ing   box,  axes  labels,  rotation,  and  scaling.
+              GGrraapphh(1G) in turn  produces  plotting  instructions
+              according  to the pplloott(5) format, for which a vari­
+              ety of output filters  exist.   The  following  are
+              typical command lines.
+
+              Previewing on a standard terminal:
+                   cluster -g | graph -g1 | plot -Tcrt
+              Previewing under X windows:
+                   cluster -g  | graph -g1 | xplot
+              or
+                   cluster -g  | xgraph
+              If  neither  xplot nor xgraph are available, run an
+              xxtteerrmm(1) switched to Tektronics mode and use
+                   cluster -g | graph -g1 | plot -Ttek
+              Converting to postscript:
+                   cluster -g | graph -g1 | psplot
+              Printing on a printer supporting pplloott ((55)) format:
+                   cluster -g | graph -g1 | lpr -g
+
+       --bb     Same as --gg, except that double drawing of lines  is
+              avoided, thus saving space and time.  This requires
+              however that ggrraapphh be called with the --bb option  to
+              correctly assemble the tree from pieces:
+                   cluster -b | graph -b
+
+       --BB     The input vectors are output as bit vectors induced
+              by the cluster tree.  The cluster  tree  is  inter­
+              preted as a code tree, i.e., for each left or right
+              branch  are  `0'  or  `1'  bit,  respectively,   is
+              printed.   An  `x'  is  used  to pad vectors to the
+              depth of the tree.
+
+       --nn_p    Norm to be used as distance metric between vectors.
+              A  positive  integer  _p specifies a metric based on
+              the L_p-norm.  The value 00 selects the maximum norm.
+              The default is 22 (Euclidean distance).
+
+       For  compatibility with an earlier version of the program,
+       the default behavior of cclluusstteerr corresponds to the  combi­
+       nation of options --ddttvv.
+
+   PPccaa oonnllyy
+       --ee_e_i_g_e_n_b_a_s_e
+              Use  _e_i_g_e_n_b_a_s_e as a file with precomputed eigenvec­
+              tors.  If the file exists, it is read and the rela­
+              tively  costly  eigenvalue  computation is avoided.
+              This also allows transforming a data set  according
+              to principle components determined from a different
+              data set.  If the file does not exist, an eigenbase
+              is computed from the current input and saved in the
+              file.
+
+       --cc_p_c_1_,_p_c_2_,_._._.
+              Select a subset of  the  principal  components  for
+              output, as typically used for dimensionality reduc­
+              tion of vector sets.  Components of the transformed
+              vectors  are  listed  in the order specified by the
+              comma-separated list of  numbers  _p_c_1,_p_c_2,...   For
+              example, --cc44,,22 prints the fourth and second princi­
+              pal components (in that order).
+
+       --EE     Output the eigenvalues instead of  the  transformed
+              input vectors.  Eigenvalues are printed in descend­
+              ing order or as specified by the --cc  option.   This
+              option  forces  recomputation of the eigenbase even
+              if an  existing  file  is  specified  with  the  --ee
+              option.
+
+BBUUGGSS
+       Halfhearted  error  handling.   If  vectors  and names are
+       given in the same file, the name at the end of  the  first
+       line  must  be  a non-numerical string, or it will be mis­
+       taken as a vector component.
+
+       The vector names at the leaves of the cluster tree tend to
+       stretch  beyond  the  bounding box of the plot.  This is a
+       feature since cclluusstteerr leaves the graphing process entirely
+       to  ggrraapphh(1G),  which  doesn't  care  about  the length of
+       strings.  This can be corrected by  explicitly  specifying
+       an upper limit for the x coordinate.
+
+       The clustering algorithm could be optimized further.
+
+SSEEEE AALLSSOO
+       graph(1G),   plot(5),   plot(1G),   xplot(1),   xgraph(1),
+       xterm(1), psplot(1), curses(3), lpr(1).
+
+AAUUTTHHOORRSS
+       Original version by  Yoshiro  Miyata  (miyata@boulder.col­
+       orado.edu).
+       Minor fixes, various options, ccuurrsseess(3) support, ggrraapphh(1G)
+       output  and  PCA  addition  by  Andreas   Stolcke   (stol­
+       cke@icsi.berkeley.edu).
+       Scaling and algorithm improvements suggested by Steve Omo­
+       hundro (om@icsi.berkeley.edu).
+       Don't   care   values   suggested   by    Kim    Daugherty
+       (kimd@gizmo.usc.edu).
+       Bit vector output suggested by Joseph Devlin (jdevlin@mae­
+       stro.usc.edu).
+       The algorithms for  eigenvalue  computation  and  Gaussian
+       elimination  were  adapted  from _N_u_m_e_r_i_c_a_l _R_e_c_i_p_e_s _i_n _C by
+       Press, Flannery, Teukolsky & Vetterling.
+       Finally, this program is freely distributable, but  nobody
+       should  try  to make money off of it, and it would be nice
+       if researchers using it acknowledged the people  mentioned
+       above.
+
+
+
+                   $Date: 2002-07-03 11:08:51 +1000 (Wed, 03 Jul 2002) $        CLUSTER(L)

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/pyrobot/!svn/ver/2456/trunk/gui/plot
+END
+simple.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/1951/trunk/gui/plot/simple.py
+END
+map.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/870/trunk/gui/plot/map.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/1552/trunk/gui/plot/__init__.py
+END
+hinton.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/1809/trunk/gui/plot/hinton.py
+END
+matrix.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/pyrobot/!svn/ver/885/trunk/gui/plot/matrix.py
+END
+scatter.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/2456/trunk/gui/plot/scatter.py
+END

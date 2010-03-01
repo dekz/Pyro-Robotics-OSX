@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/pyrobot/!svn/ver/2543/trunk/system
+END
+SerialConnection.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1514/trunk/system/SerialConnection.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/2540/trunk/system/__init__.py
+END
+log.py
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/2365/trunk/system/log.py
+END
+share.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/2391/trunk/system/share.py
+END
+ClientServer.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/1880/trunk/system/ClientServer.py
+END
+config.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/pyrobot/!svn/ver/2543/trunk/system/config.py
+END
+debug.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/1880/trunk/system/debug.py
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/1880/trunk/gui/Attic/renderer
+END
+streams.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/1880/trunk/gui/Attic/renderer/streams.py
+END
+tk.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/1880/trunk/gui/Attic/renderer/tk.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/797/trunk/gui/Attic/renderer/__init__.py
+END
+tty.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/1880/trunk/gui/Attic/renderer/tty.py
+END
+gl.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/1880/trunk/gui/Attic/renderer/gl.py
+END

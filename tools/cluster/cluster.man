@@ -1,0 +1,321 @@
+.\" $Header$
+.TH CLUSTER L "$Date: 2002-07-03 11:08:51 +1000 (Wed, 03 Jul 2002) $"
+.SH NAME
+cluster, pca \- Hierarchical Cluster Analysis and Principal Component Analysis
+.SH SYNOPSIS
+.B cluster
+.RI [ options ]
+.RI [ vectorfile 
+.RI [ namesfile ]]
+.LP
+.B pca
+.RI [ options ]
+.RI [ vectorfile
+.RI [ namesfile ]]
+.SH DESCRIPTION
+.B Cluster
+performs Hierarchical Cluster Analysis (HCA) on a set of vectors and
+outputs the result in a variety of formats on standard output.
+.PP
+.B Pca
+performs Principal Component Analysis (PCA) on a set of vectors and
+prints the transformed set of vectors on standard output.
+.PP
+If
+.I vectorfile
+is given it is read as the file containing the vector data,
+one vector per line, components separated by whitespace.
+An optional
+.I namesfile
+can be given to assign names (arbitrary strings) to these vectors.
+Names must be specified one per line, matching the number of vectors in
+.IR vectorfile .
+Names are either contiguous non-whitespace characters or arbitrary strings
+delimited by an initial double quote `"' and the end of line.
+.PP
+Vector names may also be given in
+.I vectorfile
+itself, following the vector components on each line.
+If no names
+are provided, vectors in the output are identified by their input sequence
+number instead.
+.PP
+Either of these files may be given as
+.RB ` - ',
+indicating that the
+corresponding information should be read from standard input.
+If no arguments are given standard input is read,
+allowing
+.B cluster
+to be used as a filter.
+.PP
+.B Cluster
+and
+.B pca
+also provide a simple scaling facility.
+If the first line of the input is terminated by the keyword
+.RB ` _SCALE_ '
+it is interpreted as a vector of scaling factors.
+The following lines are then
+read as data as usual, except that vector components are multiplied by
+their corresponding scaling factors.
+To specify scaling factors on the command line use
+.br
+	(echo
+.I factor1
+.I factor2
+\&... _SCALE_ ; \e
+.br
+	cat
+.I vectorfile
+) | cluster - [
+.I namesfile
+]
+.PP
+Yet another potentially useful feature is that vector components may be
+specified as
+.RB ` D/C '
+(don't care), meaning that that component will always
+contribute zero in computing distances to other vectors.
+In PCA mode, each D/C value is replaced by the mean of all non-D/C values
+along its dimension.
+.SH OPTIONS
+.TP
+.B -p
+Force PCA mode, even when the program is called as
+.BR cluster .
+.RB ( cluster
+and
+.B pca
+are different incarnations of the same program, depending on the
+zeroth argument.)
+.TP
+.B -s
+Suppress scaling.
+Vector components are not scaled, even if a
+.B _SCALE_
+line was found.
+This is useful to produce both scaled and unscaled analyses from the
+same input file.
+.TP
+.B -v
+Verbose output. Reports the number and dimension of vectors read
+and precedes each output section with an explanatory message.
+For
+.B pca ,
+execution of the computational steps involved is reported.
+.SS "Cluster only"
+.TP
+.B -d
+Output all pairs of clusters formed, along with their respective
+inter-cluster distances.
+Clusters are given as lists of vectors.
+.TP
+.B -t
+Represent the hierarchical clusters as a tree lying on its side.
+The leaves of the tree are formed by vector names, and the
+horizontal spacing between nodes is proportional to the distances
+between clusters.
+The output uses only ASCII characters, resulting in a rough approximation
+of the true proportions.
+.TP
+.B -T
+Same as
+.B -t
+but the cluster tree is displayed in a
+.BR curses (3)
+pad.  The terminal screen can be scrolled around the tree representation.
+Also, VT100 graphics characters are used for line drawing if available.
+While displaying the tree, the following one-key commands can be used:
+.RS
+.PD 0
+.TP 10
+Home, H
+Scroll to upper-left corner of window.
+.TP
+h, j, k, l, arrow keys
+Scroll left, down, up, right by one position.
+.TP
+Tab, BackTab
+Scroll right, left by 8 positions.
+.TP
+n, p
+Sroll down, up by one page.
+.TP
+R
+Redraw screen.
+.TP
+q
+Quit the display.
+.PD
+.RE
+.TP
+.BI -w width
+Set the width of the tree representation used by
+.B -t
+and
+.B -T
+to
+.I width
+characters.
+The default width is 80 or the terminal width as determined by
+.BR curses (3).
+Wider trees are more difficult to view but give a more accurate picture
+of relative distances.
+.TP
+.B -g
+Same as
+.BR -t ,
+but the graphical output is specified in a format suitable for the
+UNIX
+.BR graph (1G)
+utility, which allows further formatting such as bounding box,
+axes labels, rotation, and scaling.
+.BR Graph (1G)
+in turn produces plotting instructions according to the
+.BR plot (5)
+format, for which a variety of output filters exist.
+The following are typical command lines.
+.br
+.sp 1
+Previewing on a standard terminal:
+.br
+	cluster -g | graph -g1 | plot -Tcrt
+.br
+Previewing under X windows:
+.br
+	cluster -g  | graph -g1 | xplot
+.br
+or
+.br
+	cluster -g  | xgraph
+.br
+If neither xplot nor xgraph are available, run an
+.BR xterm (1)
+switched to Tektronics mode and use
+.br
+	cluster -g | graph -g1 | plot -Ttek
+.br
+Converting to postscript:
+.br
+	cluster -g | graph -g1 | psplot
+.br
+Printing on a printer supporting
+.B plot (5)
+format:
+.br
+	cluster -g | graph -g1 | lpr -g 
+.br
+.TP
+.B -b
+Same as
+.BR -g ,
+except that double drawing of lines is avoided, thus saving space and time.
+This requires however that
+.B graph
+be called with the
+.B -b
+option to correctly assemble the tree from pieces:
+.br
+	cluster -b | graph -b
+.TP
+.B -B
+The input vectors are output as bit vectors induced by the cluster tree.
+The cluster tree is interpreted as a code tree, i.e., for each left or right
+branch are `0' or `1' bit, respectively, is printed.
+An `x' is used to pad vectors to the depth of the tree.
+.TP
+.BI -n p
+Norm to be used as distance metric between vectors.
+A positive integer
+.I p
+specifies a metric based on the L\c
+.IR p -norm.
+The value
+.B 0
+selects the maximum norm.
+The default is
+.B 2
+(Euclidean distance).
+.PP
+For compatibility with an earlier version of the program, the default
+behavior of
+.B cluster
+corresponds to the combination of options
+.BR -dtv .
+.SS "Pca only"
+.TP
+.BI -e eigenbase
+Use
+.I eigenbase
+as a file with precomputed eigenvectors.
+If the file exists, it is read and the relatively costly eigenvalue
+computation is avoided.
+This also allows transforming a data set according to principle components
+determined from a different data set.
+If the file does not exist, an eigenbase is computed from the current
+input and saved in the file.
+.TP
+.BI -c pc1,pc2,...
+Select a subset of the principal components for output, as typically
+used for dimensionality reduction of vector sets.
+Components of the transformed vectors are listed in the order
+specified by the comma-separated list of numbers
+.IR pc1 , pc2 ,...
+For example,
+.B "-c4,2"
+prints the fourth and second principal components (in that order).
+.TP
+.B -E
+Output the eigenvalues instead of the transformed input vectors.
+Eigenvalues are printed in descending order or as specified by the
+.B -c
+option.
+This option forces recomputation of the eigenbase even if an existing
+file is specified with the
+.B -e
+option.
+.SH BUGS
+Halfhearted error handling.
+If vectors and names are given in the same
+file, the name at the end of the first line must be a non-numerical string,
+or it will be mistaken as a vector component.
+.PP
+The vector names at the leaves of the cluster tree tend to
+stretch beyond the bounding box of the plot.
+This is a feature since 
+.B cluster
+leaves the graphing process entirely to
+.BR graph (1G),
+which doesn't care about the length of strings.
+This can be corrected by explicitly specifying an upper limit for the x
+coordinate.
+.PP
+The clustering algorithm could be optimized further.
+.SH "SEE ALSO"
+graph(1G), plot(5), plot(1G), xplot(1), xgraph(1), xterm(1),
+psplot(1), curses(3), lpr(1).
+.SH AUTHORS
+Original version by Yoshiro Miyata (miyata@boulder.colorado.edu).
+.br
+Minor fixes, various options,
+.BR curses (3)
+support,
+.BR graph (1G)
+output and PCA addition by Andreas Stolcke (stolcke@icsi.berkeley.edu).
+.br
+Scaling and algorithm improvements suggested by Steve Omohundro
+(om@icsi.berkeley.edu).
+.br
+Don't care values suggested by Kim Daugherty (kimd@gizmo.usc.edu).
+.br
+Bit vector output suggested by Joseph Devlin (jdevlin@maestro.usc.edu).
+.br
+The algorithms for eigenvalue computation and Gaussian elimination
+were adapted from
+.I "Numerical Recipes in C" 
+by Press, Flannery, Teukolsky & Vetterling.
+.br
+Finally, this program is freely distributable, but nobody should try to make
+money off of it, and it would be nice if researchers using it 
+acknowledged the people mentioned above.

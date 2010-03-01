@@ -1,0 +1,38 @@
+# the size of a pixel in Stage's underlying raytrace model in meters
+resolution     0.02 
+
+interval_sim 100  # milliseconds per update step
+interval_real 100 # real-time milliseconds per update step
+
+# defines Pioneer-like robots
+include "pioneer.inc"
+
+
+# defines 'map' object used for floorplans
+include "map.inc"
+
+
+window( size [ 479.000 525.000 ] center [0.041 0.120] scale 0.009 )
+
+map (
+#  size [5 5]
+  bitmap "rink.pnm"
+)
+
+# extend the pioneer2dx definition from pioneer.inc
+
+define pioneerblob pioneer2dx (
+  ptz( blobfinder() )
+)
+
+pioneerblob (
+  name "GreenRobot"
+  color "green"
+  pose [-0.575 -1.247 45.000]
+)
+
+pioneerblob (
+  name "RedRobot"
+  color "red"
+  pose [0.194 1.236 315.000]
+)

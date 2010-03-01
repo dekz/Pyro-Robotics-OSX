@@ -1,0 +1,30 @@
+P2P
+
+Version 1.5
+
+Author:  Stan Birchfield
+         birchfield@cs.stanford.edu
+         http://vision.stanford.edu/~birch
+Date:  November 28, A.D. 1999
+
+These files implement the Pixel-to-Pixel stereo algorithm explained 
+in the paper submitted to the International Journal of Computer
+Vision, 1999.  It is only slightly different from the one presented in
+the following two papers:
+
+     "Depth Discontinuties by Pixel-to-Pixel Stereo"
+     Proceedings of the Sixth IEEE International Conference on
+         Computer Vision, Mumbai, India, pages 1073-1080, January 1998
+
+     "Depth Discontinuities by Pixel-to-Pixel 
+     Stanford University Technical Report STAN-CS-TR-96-1573, July 1996
+
+STEPS:
+
+(1) If you are running on an SGI, type "make p2p-SGI".
+    Otherwise, type "make p2p".  
+    (The only difference is the choice of compiler.  In our
+    experience, the SGI's cc compiler generates code that is four
+    times as fast as GNU's gcc.)
+
+(2) To see how to run the code, type "p2p -h".

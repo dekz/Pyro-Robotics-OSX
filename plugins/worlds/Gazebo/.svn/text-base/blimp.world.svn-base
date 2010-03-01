@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<gz:world xmlns:gz="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz" xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" xmlns:window="http://playerstage.sourceforge.net/gazebo/xmlschema/#window" xmlns:param="http://playerstage.sourceforge.net/gazebo/xmlschema/#params">
+
+  <param:Global>
+    <pause>false</pause>
+  </param:Global>
+
+  <model:ObserverCam>
+    <id>userCam0</id>
+    <xyz>-5.822 -17.653 18.669</xyz>
+    <rpy>-0 25 66</rpy>
+    <imageSize>640 480</imageSize>
+  </model:ObserverCam>
+
+  <model:LightSource>
+    <id>light1</id>
+    <xyz>50.000 50.000 100.000</xyz>
+  </model:LightSource>
+
+  <model:GroundPlane>
+    <id>ground1</id>
+    <textureFile>grid.ppm</textureFile>
+  </model:GroundPlane>
+
+  <model:Blimp>
+    <id>robot1</id>
+    <xyz>0.000 0.000 9.986</xyz>
+    <rpy>-0 0 0</rpy>
+
+    <model:MonoCam>
+      <id>camera1</id>
+      <xyz>0 0 -2</xyz>
+      <rpy>0 90 0</rpy>
+    </model:MonoCam>
+
+  </model:Blimp>
+
+</gz:world>

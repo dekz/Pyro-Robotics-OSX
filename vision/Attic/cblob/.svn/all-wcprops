@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/1099/trunk/vision/Attic/cblob
+END
+blob.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/1092/trunk/vision/Attic/cblob/blob.c
+END
+blob.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/1092/trunk/vision/Attic/cblob/blob.h
+END
+blob.i
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/1091/trunk/vision/Attic/cblob/blob.i
+END
+v4lblobtest.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/1084/trunk/vision/Attic/cblob/v4lblobtest.c
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/1089/trunk/vision/Attic/cblob/__init__.py
+END
+hsbrgb.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1039/trunk/vision/Attic/cblob/hsbrgb.c
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1090/trunk/vision/Attic/cblob/config.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1099/trunk/vision/Attic/cblob/Makefile
+END
+hsbrgb.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1012/trunk/vision/Attic/cblob/hsbrgb.h
+END
+hsbrgb.i
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1015/trunk/vision/Attic/cblob/hsbrgb.i
+END

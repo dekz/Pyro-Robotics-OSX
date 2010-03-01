@@ -1,0 +1,13 @@
+#!/bin/sh
+cp -f ./camera/player/Makefile.linux ./camera/player/Makefile
+cp -f ./camera/blob/Makefile.linux ./camera/blob/Makefile
+cp -f ./camera/fake/Makefile.linux ./camera/fake/Makefile
+cp -f ./camera/fourway/Makefile.linux ./camera/fourway/Makefile
+cp -f ./camera/robocup/Makefile.linux ./camera/robocup/Makefile
+cp -f ./camera/device/Makefile.linux ./camera/device/Makefile
+cp -f ./camera/aibo/Makefile.linux ./camera/aibo/Makefile
+cp -f ./camera/stereo/Makefile.linux ./camera/stereo/Makefile
+cp -f ./geometry/cgeometry/Makefile.linux ./geometry/cgeometry/Makefile
+cp -f ./vision/example/Makefile.linux ./vision/example/Makefile
+cp -f ./vision/cvision/Makefile.linux ./vision/cvision/Makefile
+cp -f ./brain/psom/csom_src/makefile.linux ./brain/psom/csom_src/makefile

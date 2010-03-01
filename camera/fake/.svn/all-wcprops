@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pyrobot/!svn/ver/2543/trunk/camera/fake
+END
+FakeLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2520/trunk/camera/fake/FakeLib.h
+END
+FakeLib.i
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2520/trunk/camera/fake/FakeLib.i
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2543/trunk/camera/fake/__init__.py
+END
+Makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2526/trunk/camera/fake/Makefile.linux
+END
+Makefile.mac
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/2520/trunk/camera/fake/Makefile.mac
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/2529/trunk/camera/fake/Makefile
+END
+FakeLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2520/trunk/camera/fake/FakeLib.cpp
+END

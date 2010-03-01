@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/1618/trunk/simulators/Attic/khepera/CNTRL
+END
+controller.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pyrobot/!svn/ver/808/trunk/simulators/Attic/khepera/CNTRL/controller.c
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pyrobot/!svn/ver/742/trunk/simulators/Attic/khepera/CNTRL/__init__.py
+END
+controller.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pyrobot/!svn/ver/808/trunk/simulators/Attic/khepera/CNTRL/controller.h
+END
+sim_control.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/pyrobot/!svn/ver/647/trunk/simulators/Attic/khepera/CNTRL/sim_control.c
+END
+controller.i
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/pyrobot/!svn/ver/740/trunk/simulators/Attic/khepera/CNTRL/controller.i
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/1618/trunk/simulators/Attic/khepera/CNTRL/makefile
+END

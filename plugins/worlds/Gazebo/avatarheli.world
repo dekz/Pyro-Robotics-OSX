@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<gz:world 
+  xmlns:gz='http://playerstage.sourceforge.net/gazebo/xmlschema/#gz'
+  xmlns:model='http://playerstage.sourceforge.net/gazebo/xmlschema/#model'
+  xmlns:window='http://playerstage.sourceforge.net/gazebo/xmlschema/#window'
+  xmlns:param='http://playerstage.sourceforge.net/gazebo/xmlschema/#params'>
+
+  <param:Global>
+    <pause>false</pause>
+  </param:Global>
+
+  <model:ObserverCam>
+    <id>userCam0</id>
+    <xyz>-2.218 -1.478 3.001</xyz>
+    <rpy>-0 31 36</rpy>
+    <imageSize>640 480</imageSize>
+  </model:ObserverCam>
+
+  <model:LightSource>
+    <id>light1</id>
+    <xyz>50 50 100</xyz>
+  </model:LightSource>
+
+  <model:GroundPlane>
+    <id>ground1</id>
+    <textureFile>grid.ppm</textureFile>
+  </model:GroundPlane>
+
+  <model:AvatarHeli>
+    <id>robot1</id>
+    <xyz>0 0 1.00</xyz>
+    <rpy>0 0 0</rpy>
+
+    <skinFile>heli_withlaser.3ds</skinFile>
+    <skinScale>0.003 0.003 0.003</skinScale>
+    <skinXyz>-0.10 0.10 -0.10</skinXyz>
+    <skinRpy>0 0 180</skinRpy>
+
+    <model:MonoCam>
+      <id>camera1</id>
+      <xyz>0 0 0</xyz>
+      <rpy>0 90 0</rpy>
+    </model:MonoCam>
+
+  </model:AvatarHeli>
+
+</gz:world>

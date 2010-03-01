@@ -1,0 +1,116 @@
+
+Here is some information regarding the clustering method used in cluster,
+since many people have asked for some.
+
+THE METHOD
+
+The algorithm works by iteratively merging smaller clusters into bigger
+ones.
+
+It starts with one data point per cluster.  Then look for the smallest
+distance between any two clusters (i.e., data points at this stage).
+Distance is Euclidean by default, but can be any p-norm (see the -n
+option). Those two cluster are merged, i.e., they form a new cluster
+with the two earlier ones as subclusters, which gives rise to a branch
+in the cluster tree.  For purposes of distance computation the new cluster
+is represented by the average of all its data points.
+
+The merging is repeated until only one cluster is left.
+
+LITERATURE
+
+As pointed out by Fionn Murtagh (fmurtagh@eso.org), the algorithm implemented
+by cluster is known as the Centroid or "Unweighted pair group" method.
+(see Sneath:73 below).
+
+An account of the origin of this algorithm can be found in
+the following mail from Yoshiro Miyata:
+
+    Date: Sat, 6 Feb 93 10:50:41 JST
+    From: miyata@sccs.chukyo-u.ac.jp (Yoshiro MIYATA)
+    To: stolcke@ICSI.Berkeley.EDU
+    Subject: cluster algorithm
+
+    When I wrote that code several years ago, being a psychology grad
+    student I knew next to nothing about this branch of statistics.  It
+    was just a fun project on a rainy weekend sort of thing.  I don't
+    remember reading any book .. I probably heard about clustering
+    analysis in someone's talk, imagined what it should be like and coded
+    it up.  I must have been lucky if that was close enough to something
+    in the literature!!
+
+The included MAIL from fmurtagh@eso.org mentions several alternative methods
+and points out references.
+
+REFERENCES
+
+@book{Sneath:73,
+author =	{Peter H. A. Sneath and Robert R. Sokal},
+title =		{Numerical taxonomy; the principles and practice of numerical
+		classification},
+publisher =	{W. H. Freeman},
+address =	{San Francisco},
+yyear =		{1973}
+}
+
+@book{Murtagh:85,
+author =	{Fionn Murtagh},
+title =		{Multidimensional clustering algorithms},
+publisher =	{Physica-Verlag},
+address =	{Vienna},
+year =		{1985}
+}
+
+@article{Gower:69,
+author =        {J. C. Gower and G. J. S. Ross},
+title =         {Minimum Spanning Trees and Single Linkage Cluster Analysis},
+journal =       {Applied Statistics},
+volume =        {18},
+number =        {1},
+pages =         {54-64},
+year =          {1969},
+annote =        {Describes algorithms for MST and SLCA, in particular how to
+		obtain the latter from the former.}
+}
+
+@article{Zahn:71,
+author =        {Charles T. Zahn},
+title =         {Graph-Theoretical Methods for Detecting and Describing
+                Gestalt Clusters},
+pages =         {68-86},
+journal =       {IEEE Transactions on Computers},
+volume =        {C-20},
+number =        {1},
+month =         jan,
+year =          {1971},
+annote =        {Explores the minimum spanning tree as a tool for
+                clustering.  Applications include cluster segmentation,
+                density gradient detection, particle tracking, description
+                of Gaussian clusters, hierarchical clustering,
+                and relative compactness computation.
+                Also contains many pointers into the clustering literature.}
+}
+
+THE ALGORITHM
+
+In the latest version of cluster, minimum distance pairs are found by
+keeping track of the nearest neighbor of each data point (as well as
+the distance).  The nnbs are initially computed in O(n^2) time.  When a
+new cluster is formed, one of the child nodes is discarded, while the
+other is replaced by the new node representing the new cluster.  For
+each of the other points, it is checked whether the nearest neighbor
+has changed due to the new cluster, and updated if so.  This can be
+done in constant time for each point (except for the rare case where
+the previous nearest neighbor happened to be one of the two points now
+replaced by the cluster).  On each iteration, searching for the
+shortest distance pair takes O(n) time using nearest neighbor list.
+There are n iterations overall, so the total time is O(n^2).
+
+For historical notes on the less efficient algorithm in the old cluster,
+see the BENCHMARKS file.  Also note that an even more efficient
+implementation (O(n log n)) should be possible.  Unfortunately, I'm 
+just a dedicated user of cluster, and not expert in these matters.
+
+Andreas Stolcke
+1/21/93
+

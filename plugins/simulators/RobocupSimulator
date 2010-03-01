@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# A shell script to get the robocup simulator going.
+# TODO: figure out how to use world file!
+# it seems that it is hardcoded in server
+
+pyropid=$1
+shift
+if [ "$1" = "-g" ]
+then
+    graphics=0
+    shift
+else
+    graphics=1
+fi
+world=$1
+# Start robocup -sfile is server config, -pfile is player config
+# this will have player config default to ~./rcssserver-player.conf
+rcssserver -sfile $world &
+spid=$!
+# Wait a sec for it to get started
+sleep 1
+# Now, start the monitor
+if [ $graphics = 1 ]
+then
+    rcssmonitor &
+    mpid=$!
+fi
+# wait for pyro or monitor to quit
+while ps --noheaders $pyropid && ps --noheaders $mpid; do sleep 1; done > /dev/null
+# Kill server
+kill $spid
+# Kill monitor
+if [ $graphics = 1 ]
+then
+    kill $mpid
+fi

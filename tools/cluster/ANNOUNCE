@@ -1,0 +1,55 @@
+
+Dear Connectionists:
+
+After several months of testing I'm releasing a slightly revised version
+my enhanced cluster utility.  A major memory allocation glitch was fixed
+and support for System 5 curses pads was added.
+
+I should note that for viewing the graph output of cluster the original
+version of the xgraph program is not enough because it cannot handle
+labeled datapoints. An enhanced version that works well with cluster can
+be ftped at the same location as cluster (see below).
+
+	Andreas
+
+
+HOW TO GET CLUSTER
+
+cluster is available via anonymous ftp from icsi-ftp.berkeley.edu
+(128.32.201.55).  To get it use FTP as follows:
+
+% ftp icsi-ftp.berkeley.edu
+Connected to icsic.Berkeley.EDU.
+220 icsi-ftp (icsic) FTP server (Version 5.60 local) ready.
+Name (icsic.Berkeley.EDU:stolcke): anonymous
+Password (icsic.Berkeley.EDU:anonymous):
+331 Guest login ok, send ident as password.
+230 Guest login Ok, access restrictions apply.
+ftp> cd pub/ai
+250 CWD command successful.
+ftp> binary
+200 Type set to I.
+ftp> get cluster-2.2.tar.Z
+200 PORT command successful.
+150 Opening BINARY mode data connection for cluster-2.2.tar.Z (15531 bytes).
+226 Transfer complete.
+15531 bytes received in 0.08 seconds (1.9e+02 Kbytes/s)
+ftp> quit
+221 Goodbye.
+
+HOW TO BUILD CLUSTER
+
+Unpack in an empty directory using
+
+% zcat cluster-2.2.tar.Z | tar xf -
+
+Read the README and especially the man page (cluster.man) for information.
+Check the Makefile for any compile time flags that might need adjustment.
+Then compile with
+
+% make
+
+After making the appropriate adjustments in the Makefile you can
+
+% make install
+

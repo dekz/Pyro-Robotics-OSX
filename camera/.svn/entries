@@ -1,0 +1,98 @@
+10
+
+dir
+2576
+http://svn.cs.brynmawr.edu/pyrobot/trunk/camera
+http://svn.cs.brynmawr.edu/pyrobot
+
+
+
+2009-06-19T18:33:13.208001Z
+2565
+dblank
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+21022541-8d97-4203-aabd-96d1d42fbb12
+
+device
+dir
+
+stereo
+dir
+
+v4l
+dir
+
+fake
+dir
+
+__init__.py
+file
+
+
+
+
+2010-02-26T00:55:51.000000Z
+6f2fe93839f71e7559d0cd12cf65a993
+2009-04-24T22:25:22.429294Z
+2520
+dblank
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18542
+
+v4l2
+dir
+
+bt848
+dir
+
+robocup
+dir
+
+aibo
+dir
+
+fourway
+dir
+
+player
+dir
+
+blob
+dir
+
+rovio
+dir
+

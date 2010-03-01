@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/2529/trunk/camera/robocup
+END
+RobocupLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/2520/trunk/camera/robocup/RobocupLib.cpp
+END
+RobocupLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2520/trunk/camera/robocup/RobocupLib.h
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2367/trunk/camera/robocup/__init__.py
+END
+RobocupLib.i
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2520/trunk/camera/robocup/RobocupLib.i
+END
+Makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/2526/trunk/camera/robocup/Makefile.linux
+END
+Makefile.mac
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2520/trunk/camera/robocup/Makefile.mac
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2529/trunk/camera/robocup/Makefile
+END

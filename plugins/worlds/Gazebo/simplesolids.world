@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<gz:world xmlns:gz="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz" xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" xmlns:window="http://playerstage.sourceforge.net/gazebo/xmlschema/#window" xmlns:params="http://playerstage.sourceforge.net/gazebo/xmlschema/#params">
+
+  <model:ObserverCam>
+    <id>userCam0</id>
+    <xyz>1.992 -3.104 3.517</xyz>
+    <rpy>-0 43 109</rpy>
+    <imageSize>640 480</imageSize>
+  </model:ObserverCam>
+
+  <model:LightSource>
+    <id>light0</id>
+    <xyz>-10.000 -10.000 10.000</xyz>
+  </model:LightSource>
+
+  <model:GroundPlane>
+    <id>ground1</id>
+    <textureFile>grid.ppm</textureFile>
+  </model:GroundPlane>
+
+  <model:SimpleSolid>
+    <xyz>-0.000 -0.000 -0.000</xyz>
+    <shape>box</shape>
+    <size>0.70 0.70 0.50</size>
+    <color>1.0 1.0 1.0</color>
+    <textureFile>ground.ppm</textureFile>     
+  </model:SimpleSolid>
+
+  <model:SimpleSolid>
+    <xyz>1.000 0.000 -0.000</xyz>
+    <rpy>0 -0 0</rpy>
+    <shape>cylinder</shape>
+    <size>0.20 1.00</size>
+    <color>1.0 0 0</color>
+    <skinFile>chesspawn.3ds</skinFile>
+    <skinScale>0.01 0.01 0.01</skinScale>
+    <skinXyz>-0.5 -0.7 -0.5</skinXyz>
+  </model:SimpleSolid>
+
+  <model:SimpleSolid>
+    <xyz>0.000 -1.500 -0.000</xyz>
+    <shape>sphere</shape>
+    <size>0.50</size>
+    <color>0 0.5 0 0.5</color>
+    <transparent>1</transparent>
+  </model:SimpleSolid>
+
+</gz:world>

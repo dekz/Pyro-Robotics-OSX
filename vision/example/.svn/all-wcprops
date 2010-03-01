@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/pyrobot/!svn/ver/2529/trunk/vision/example
+END
+myVisionLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/2520/trunk/vision/example/myVisionLib.cpp
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/1339/trunk/vision/example/__init__.py
+END
+myVisionLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2520/trunk/vision/example/myVisionLib.h
+END
+Makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/pyrobot/!svn/ver/2526/trunk/vision/example/Makefile.linux
+END
+myVisionLib.i
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2520/trunk/vision/example/myVisionLib.i
+END
+Makefile.mac
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2520/trunk/vision/example/Makefile.mac
+END
+myFakeCameraDevice.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pyrobot/!svn/ver/1880/trunk/vision/example/myFakeCameraDevice.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2529/trunk/vision/example/Makefile
+END

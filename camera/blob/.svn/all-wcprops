@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pyrobot/!svn/ver/2529/trunk/camera/blob
+END
+BlobLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2519/trunk/camera/blob/BlobLib.cpp
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2466/trunk/camera/blob/__init__.py
+END
+BlobLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2519/trunk/camera/blob/BlobLib.h
+END
+Makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2526/trunk/camera/blob/Makefile.linux
+END
+BlobLib.i
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2519/trunk/camera/blob/BlobLib.i
+END
+Makefile.mac
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/2519/trunk/camera/blob/Makefile.mac
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/2529/trunk/camera/blob/Makefile
+END

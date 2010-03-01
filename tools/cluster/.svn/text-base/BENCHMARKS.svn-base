@@ -1,0 +1,44 @@
+
+The algorithm used in cluster version up to 2.3 was not very sophisticated.
+It constructs a triangular distance matrix which is repeatedly searched
+linearly for the shortest distance pair of data points.
+Thus the algorithm is cubic in the number n of data points.
+There is also a component that is linear in the length l of the patterns,
+but that is typically dominated by the n^3 part.
+
+In version 2.4 I made some trivial changes that not only cut the amount
+of memory, but also brought about a 20% improvement in run time.
+
+In version 2.5 another simple but effective change was made in the way
+distances are recorded.  Instead of a full n-by-n matrix, only the
+nearest neighbor for each data point is recorded, along with its distance.
+From this we can find the overall smallest distance pair in time O(n).
+For each point, the nearest neighbor info can be updated in time O(1) in
+the best case, and O(n) in the worst case; amortized time is O(1) per data
+point.  Thus the overall time becomes O(n^2).  As a bonus we can get rid of
+the triangular distance matrix and recompute distance the few times we need to,
+which brings the space complexity from O(n^2) to O(n).  This typically saves
+several megabytes.
+
+Using fancy methods for nearest neighbor finding (e.g., kd-trees) we should be
+able to get to O(n log n) average time complexity, but this will be left for a
+later version.
+
+Below are some benchmark results that confirm these analyses.
+
+------
+
+User CPU time measured on a SPARCstation 2 with
+
+	time cluster -g test.file >/dev/null
+
+no. vectors x length	version 2.3	version 2.4	version 2.5
+
+100 x 10 		1.1 sec		0.8 sec		0.78 sec
+200 x 10		4.0 sec		3.4 sec		2.2 sec
+500 x 10		40.4 sec	32.2 sec	10.3 sec
+
+1000 x 1		272 sec		213 sec		10.6 sec
+1000 x 10		292 sec		230 sec		39.2 sec
+
+100 x 100		4.4 sec		4.1 sec		4.5 sec

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/2529/trunk/camera/device
+END
+Device.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/2235/trunk/camera/device/Device.cpp
+END
+Device.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2235/trunk/camera/device/Device.h
+END
+Makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2526/trunk/camera/device/Makefile.linux
+END
+Makefile.mac
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2520/trunk/camera/device/Makefile.mac
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2529/trunk/camera/device/Makefile
+END

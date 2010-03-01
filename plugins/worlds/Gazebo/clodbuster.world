@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<gz:world 
+  xmlns:gz='http://playerstage.sourceforge.net/gazebo/xmlschema/#gz'
+  xmlns:model='http://playerstage.sourceforge.net/gazebo/xmlschema/#model'
+  xmlns:window='http://playerstage.sourceforge.net/gazebo/xmlschema/#window'
+  xmlns:params='http://playerstage.sourceforge.net/gazebo/xmlschema/#params'>
+
+  <model:ObserverCam>
+    <id>userCam0</id>
+    <xyz>0.002 -0.869 0.719</xyz>
+    <rpy>0 41 84</rpy>
+  </model:ObserverCam>
+
+  <model:LightSource>
+    <id>light1</id>
+    <xyz>0 0 10</xyz>
+  </model:LightSource>
+
+  <model:GroundPlane>
+    <id>ground1</id>
+    <color>1 1 1</color>
+    <textureFile>grass.jpg</textureFile>
+  </model:GroundPlane>
+
+  <model:ClodBuster>
+    <id>robot1</id>
+    <xyz>0 0 0.20</xyz>
+    <rpy>0 0 45</rpy>
+  </model:ClodBuster>
+
+</gz:world>

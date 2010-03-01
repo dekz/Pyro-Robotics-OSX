@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/2522/trunk/tools/cluster
+END
+error.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/546/trunk/tools/cluster/error.h
+END
+alloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/1911/trunk/tools/cluster/alloc.h
+END
+MAIL
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/pyrobot/!svn/ver/546/trunk/tools/cluster/MAIL
+END
+graph.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/1911/trunk/tools/cluster/graph.c
+END
+pca.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/1911/trunk/tools/cluster/pca.c
+END
+vectors
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/775/trunk/tools/cluster/vectors
+END
+treeplot.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/776/trunk/tools/cluster/treeplot.py
+END
+ALGORITHM
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/546/trunk/tools/cluster/ALGORITHM
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/773/trunk/tools/cluster/__init__.py
+END
+pcaplot.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/1823/trunk/tools/cluster/pcaplot.py
+END
+cluster.man
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/546/trunk/tools/cluster/cluster.man
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/546/trunk/tools/cluster/README
+END
+pcaview
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/1922/trunk/tools/cluster/pcaview
+END
+cluster.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/546/trunk/tools/cluster/cluster.txt
+END
+cluster.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/1911/trunk/tools/cluster/cluster.c
+END
+names
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/775/trunk/tools/cluster/names
+END
+ANNOUNCE
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/546/trunk/tools/cluster/ANNOUNCE
+END
+cluster.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/546/trunk/tools/cluster/cluster.h
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/546/trunk/tools/cluster/error.c
+END
+alloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/546/trunk/tools/cluster/alloc.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2522/trunk/tools/cluster/Makefile
+END
+BENCHMARKS
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/546/trunk/tools/cluster/BENCHMARKS
+END
+pca.man
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/546/trunk/tools/cluster/pca.man
+END
+testm.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/546/trunk/tools/cluster/testm.c
+END

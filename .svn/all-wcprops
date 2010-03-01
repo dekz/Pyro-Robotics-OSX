@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/pyrobot/!svn/ver/2576/trunk
+END
+compile.py
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/pyrobot/!svn/ver/2020/trunk/compile.py
+END
+linux_makefiles
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/2530/trunk/linux_makefiles
+END
+mac_makefiles
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/2525/trunk/mac_makefiles
+END
+Makefile.src
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/pyrobot/!svn/ver/2516/trunk/Makefile.src
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/pyrobot/!svn/ver/1898/trunk/AUTHORS
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pyrobot/!svn/ver/2543/trunk/__init__.py
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/pyrobot/!svn/ver/2536/trunk/INSTALL
+END
+CircularList.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/pyrobot/!svn/ver/1689/trunk/CircularList.py
+END
+graphics.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pyrobot/!svn/ver/2541/trunk/graphics.py
+END
+configure.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/pyrobot/!svn/ver/2563/trunk/configure.py
+END
+configWin.py
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/pyrobot/!svn/ver/2451/trunk/configWin.py
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/pyrobot/!svn/ver/2197/trunk/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/pyrobot/!svn/ver/1898/trunk/README
+END

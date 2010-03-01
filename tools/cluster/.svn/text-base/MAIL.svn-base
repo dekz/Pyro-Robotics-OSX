@@ -1,0 +1,160 @@
+From fmurtagh@eso.org Wed Apr 14 17:01:47 1993
+Replied: Fri, 23 Apr 93 01:52:34 MDT
+Replied: "To: fmurtagh@eso.org Fcc: soft/cluster"
+Return-Path: fmurtagh@eso.org 
+Delivery-Date: Wed, 14 Apr 93 08:02:04 MDT
+Return-Path: fmurtagh@eso.org
+Return-Path: <fmurtagh@eso.org>
+Received: from st2.hq.eso.org by icsia.ICSI.Berkeley.EDU (4.1/HUB$Revision$)
+	id AA00679; Wed, 14 Apr 93 08:01:56 PDT
+Date: Wed, 14 Apr 93 17:01:47 +0200
+From: fmurtagh@eso.org
+Message-Id: <9304141501.AA04435@st2.hq.eso.org>
+Received: by st2.hq.eso.org (4.1/ eso-1.1)
+	id AA04435; Wed, 14 Apr 93 17:01:47 +0200
+To: stolcke@ICSI.Berkeley.EDU
+Subject: cluster-2.7
+Status: O
+
+Just a quick comment on your code, which I pulled over today (- I had it 
+before at some stage), if I may.
+
+Your algorithm has nothing to do with the single link method (of course both
+are hierarchical clustering methods).  Given that your dissimilarity between
+cluster centers is a straight Euclidean (or other metric) distance, and given
+that your definition of cluster centers is a weighted average of the subcluster
+centers, your algorithm is an implementation of the Centroid or UPGMC method.
+The latter stands for something like 'Unweighted pair group method - 
+centroids' - see PHA Sneath and RR Sokal, Numerical Taxonomy, Freeman, 1973.
+
+With a small change in the dissimilarity formula between cluster centers, to 
+also take account of cluster sizes, you could have Ward's minimum variance 
+method.  Alternatively with a small change in the cluster update formula, to
+*not* take cluster size into account, you get the Median or Gower or WPGMC
+method.  
+
+Note that in the case of the Centroid and Median methods, unlike Ward's method,
+you can run into inversion or reversal problems, i.e. nonmonotic variation in 
+the agglomerative criterion value.  You may be taking care of this situation
+(I'm not 100% sure) in the part of your 'cluster.c' code where you have a 
+comment: 'distance to new node is smaller than previous nnb, ...'.  With due
+allowances made for non-unique situations, inversions cannot arise in the case
+of the Ward method.
+
+The single link method (as also the complete link or average link methods) don't
+allow for the definition of a cluster center (which can subsequently be used
+for calculating inter-cluster dissimilarity, as in the case of your 
+implementation).
+
+And... Another thing.  In carrying out an agglomeration, you scan the list of 
+objects remaining and their nearest neighbors.  Each pair of 'reciprocal 
+nearest neighbors' (i.e. x is NN of y, and y is NN of x) with a guarantee 
+that there will be no untoward knock-on effects when determining the new 
+cluster centers, - i.e. updating will be sufficiently local.  
+
+More on this, etc., is in my 'Multidimensional Clustering Algorithms', 
+Compstat Lectures 4, Physica-Verlag, 1985. 
+
+Hope you don't mind me sending you this... Good luck with further development
+of your program.  
+
+Fionn Murtagh
+fmurtagh@eso.org
+
+
+
+
+
+
+From murtagh@stsci.edu Fri Apr 23 10:08:46 1993
+Return-Path: murtagh@stsci.edu 
+Delivery-Date: Fri, 23 Apr 93 07:09:05 MDT
+Return-Path: murtagh@stsci.edu
+Return-Path: <murtagh@stsci.edu>
+Received: from STSCI.EDU by icsia.ICSI.Berkeley.EDU (4.1/HUB$Revision$)
+	id AA12948; Fri, 23 Apr 93 07:08:54 PDT
+Received: Fri, 23 Apr 93 10:08:47 EDT from NEMESIS.STSCI.EDU (ceres.stsci.edu) by stsci.edu (4.1)
+Received: Fri, 23 Apr 93 10:08:46 EDT by ceres.stsci.edu (4.1)
+Date: Fri, 23 Apr 93 10:08:46 EDT
+From: Fionn Murtagh <murtagh@stsci.edu>
+Message-Id: <9304231408.AA09009@NEMESIS.STSCI.EDU>
+To: stolcke@ICSI.Berkeley.EDU
+Subject: re: cluster-2.7
+Status: O
+
+Many thanks for the message.  
+
+There are of course clustering methods (and other methods which could also be 
+useful - princ. comp. analysis, etc.) available in the mainstream 
+commercial statistical packages - SAS, SPSS, BMDP, SYSTAT - and the manuals
+of these packages often give a good, succinct overview of whatever methods are
+available.  These are small selections of methods, though.  I myself use 
+the S-Plus statistical language and graphics environment quite a bit.  At 
+some point soon I hope to put some of my own code onto the Statlib server 
+(see below).  S-Plus is commercial, and is an augmented version of S, 
+developed by ATT Bell.  There is a package (again, commercial) called CLUSTAN 
+which specializes in clustering methods, and is available from Clustan Ltd. 
+in Edinburgh.  In biology and such fields, there are packages - one which I 
+have not used is NT-SYS avaiable from F.J. Rohlf in SUNY - Stony Brook.  
+
+A clustering-related list which periodically has information on code, or 
+requests, is CLASS-L at Bitnet node sbccvm.  (Send one-liner: 'subscribe 
+CLASS-L your-name' to listserv@sbccvm.bitnet)  
+
+Statlib is the premier location for 'public domain' statistics code, it 
+includes quite a bit of material for S, and it also includes some clustering
+etc. code.  The Xgobi 3-d spin/rotation/etc. data viewer is standalone and
+(hopefully still) is available there.  Algorithms from 'Applied Statistics'
+have some (limited) clustering code, and there are also some things which I
+put there (in area 'multiv' if I remember correctly) in the past (Fortran...).
+To get started using Statlib, send the one-line message: 'send index' to 
+'statlib@lib.stat.cmu.edu'.  Stablib is ftp'able at  'lib.stat.cum.edu', 
+login with username 'statlib' (This access mechanism is probably available 
+through gopher also.)
+
+Hope this helps...  As you can see there is a lot around, but it might not
+be in the shape that you want it.
+
+All the best,
+
+Fionn Murtagh
+
+fmurtagh@eso.org
+murtagh@stsci.edu
+
+
+
+Return-Path: crr@cogsci.psych.utah.edu 
+Delivery-Date: Fri, 02 Jul 93 12:28:36 MDT
+Return-Path: crr@cogsci.psych.utah.edu
+Return-Path: <crr@cogsci.psych.utah.edu>
+Received: from cs.utah.edu by icsia.ICSI.Berkeley.EDU (4.1/HUB$Revision$)
+	id AA13104; Fri, 2 Jul 93 12:28:32 PDT
+Received: from cogsci.psych.utah.edu by cs.utah.edu (5.65/utah-2.21-cs)
+	id AA24685; Fri, 2 Jul 93 13:28:30 -0600
+Received: by cogsci.psych.utah.edu (AIX 3.2/UCB 5.64/4.03)
+          id AA08078; Fri, 2 Jul 1993 13:17:17 -0600
+Message-Id: <9307021917.AA08078@cogsci.psych.utah.edu>
+To: fmurtagh%eso.org@cs.utah.edu
+Cc: crr@cogsci.psych.utah.edu, stolcke%icsi.berkeley.edu@cs.utah.edu
+Subject: Re: statlib 
+In-Reply-To: Your message of Fri, 02 Jul 93 09:26:11 +0200.
+             <9307020726.AA01893@st2.hq.eso.org> 
+Date: Fri, 02 Jul 93 13:17:17 -0700
+From: crr@cogsci.psych.utah.edu
+
+
+	 It has just worked okay for me.  Note that the node name is lib.stat.c
+	mu.edu
+	 (you wrote 'cum' instead of 'cmu' = Carniegie-Mellon Univ.).  Note als
+	o that
+	 this ftp access requires you to log in with username 'statlib' (so it'
+	s not
+	 anonymous ftp), and then you are asked to give your email address as a
+	 password.
+
+Got it now.  The problem was that there was a typo in the mail message
+you sent to Andreas Stolcke in response to his clustering program.
+Thanks for your help.
+
+Charlie

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<gz:world xmlns:gz="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz" xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor" xmlns:window="http://playerstage.sourceforge.net/gazebo/xmlschema/#window" xmlns:param="http://playerstage.sourceforge.net/gazebo/xmlschema/#params" xmlns:ui="http://playerstage.sourceforge.net/gazebo/xmlschema/#params">
+
+  <model:ObserverCam>
+    <id>userCam0</id>
+    <xyz>5.637 93.859 3.053</xyz>
+    <rpy>-0 13 -39</rpy>
+    <imageSize>640 480</imageSize>
+    <updateRate>10</updateRate>
+  </model:ObserverCam>
+
+  <model:SkyDome>
+    <toneMap>skyTones.jpg</toneMap>
+    <timeLapse>true</timeLapse>
+  </model:SkyDome>
+
+  <model:LightSource>
+    <id>light1</id>
+    <xyz>0.000 10.000 100.000</xyz>
+  </model:LightSource>
+
+  <model:GroundPlane>
+    <id>ground1</id>
+    <color>0.0 0.5 0.0</color>
+    <textureFile>grid.ppm</textureFile>
+  </model:GroundPlane>
+
+  <model:Terrain>
+    <xyz>0.000 0.000 -0.100</xyz>
+    <terrainFile>example.gzb</terrainFile>
+  </model:Terrain>
+
+  <model:Pioneer2AT>
+    <id>robot1</id>
+    <xyz>8.647 91.267 -0.000</xyz>
+
+    <model:SickLMS200>
+      <id>laser1</id>
+      <xyz>0.0 0.0 0.30</xyz>
+
+      <model:SonyVID30>
+        <id>camera1</id>
+        <xyz>0 0 0.20</xyz>
+        <rpy>0 0 0</rpy>
+        <updateRate>.3</updateRate>
+      </model:SonyVID30>
+    </model:SickLMS200>
+  </model:Pioneer2AT>
+
+</gz:world>

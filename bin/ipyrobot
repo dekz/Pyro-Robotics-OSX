@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#
+# IPyron (= Pyrobot + IPython) launcher script
+# by Pierre-Antoine Champin (pierre-antoine.champin at iuta.univ-lyon1.fr)
+#
+
+# I need that under Debian, don't ask me why
+export HOSTNAME=$HOSTNAME
+
+# Launch pyrobot with the appropriate options
+exec $PYROBOT/bin/pyrobot "$@" -g tty -e \
+    "from pyrobot.ipyrobot import *; ipyrobot_start(vars())"

@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# A shell script to get gazebo and player running together
+# Assumes that for the .world file there is a .world.cfg file
+
+pyropid=$1
+shift
+config="$PYROBOT/plugins/configs/Player/gazebo.cfg"
+gui=1
+export GAZEBOPATH=$GAZEBOPATH:/usr/local/lib:/usr/lib
+if [ "$1" = "-g" ]
+then
+    gui=0
+    world="$2"
+else
+    world="$1"
+fi
+# clean up any old starts
+rm -rf /tmp/gazebo-$USER*
+# Start gazebo
+if [ "$gui" == "1" ]
+then
+    wxgazebo $world &
+else
+    gazebo $world &
+fi
+# Wait a bit for it to get started
+sleep 3
+# Now, start the player layer
+player -g default $config &
+# wait for pyro to quit
+while ps --noheaders $pyropid && ps --noheaders $gpid; do sleep 1; done > /dev/null
+# Kill wxgazebo and player
+kill 0

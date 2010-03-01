@@ -1,0 +1,10 @@
+#!/bin/awk -f
+{ howmany = $1 ; howlong = $2;
+  for (i = 0; i < howmany; i = i + 1) {
+	vector = "" i;
+	for (j = 1; j < howlong; j = j + 1)
+		vector = vector " " 1;
+	print vector;
+  }
+  exit;
+}

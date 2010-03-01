@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/2529/trunk/camera/stereo
+END
+StereoLib.i
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/2520/trunk/camera/stereo/StereoLib.i
+END
+error.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2240/trunk/camera/stereo/error.h
+END
+p2p.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/2240/trunk/camera/stereo/p2p.c
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/2367/trunk/camera/stereo/__init__.py
+END
+p2p.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/pyrobot/!svn/ver/2240/trunk/camera/stereo/p2p.h
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/2240/trunk/camera/stereo/README
+END
+base.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/2240/trunk/camera/stereo/base.h
+END
+pnmio.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2240/trunk/camera/stereo/pnmio.c
+END
+postprocess.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2240/trunk/camera/stereo/postprocess.c
+END
+pnmio.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2240/trunk/camera/stereo/pnmio.h
+END
+StereoLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/2520/trunk/camera/stereo/StereoLib.cpp
+END
+error.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2240/trunk/camera/stereo/error.c
+END
+Makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2526/trunk/camera/stereo/Makefile.linux
+END
+Makefile.mac
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2520/trunk/camera/stereo/Makefile.mac
+END
+match_scanlines.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/2240/trunk/camera/stereo/match_scanlines.c
+END
+Makefile.p2p
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2245/trunk/camera/stereo/Makefile.p2p
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2529/trunk/camera/stereo/Makefile
+END
+StereoLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/2520/trunk/camera/stereo/StereoLib.h
+END

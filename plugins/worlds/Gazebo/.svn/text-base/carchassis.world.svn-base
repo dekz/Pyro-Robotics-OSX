@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<gz:world xmlns:gz="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz" xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" xmlns:window="http://playerstage.sourceforge.net/gazebo/xmlschema/#window" xmlns:param="http://playerstage.sourceforge.net/gazebo/xmlschema/#param">
+
+  <param:Global>
+    <fogDensity>0.025</fogDensity>
+  </param:Global>
+
+  <model:LightSource>
+    <id>light0</id>
+    <xyz>-5.000 -5.000 10.000</xyz>
+  </model:LightSource>
+
+  <model:ObserverCam>
+    <id>userCam0</id>
+    <xyz>1.197 -3.237 2.989</xyz>
+    <rpy>-0 39 101</rpy>
+    <imageSize>640 480</imageSize>
+  </model:ObserverCam>
+
+  <model:GroundPlane>
+    <id>ground1</id>
+    <color>0.5 0.5 0.5</color>
+    <textureFile>grid.ppm</textureFile>
+  </model:GroundPlane>
+
+  <model:CarChassis>
+    <id>car1</id>
+    <xyz>-0.000 -0.000 -0.005</xyz>
+    <skinFile>jeep.3ds</skinFile>
+    <skinScale>0.5 0.55 0.5</skinScale>
+    <skinXyz>-0.2 0.2 0.5</skinXyz>
+    <skinRpy>0 0 90</skinRpy>
+  </model:CarChassis>
+
+</gz:world>

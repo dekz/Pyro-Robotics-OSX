@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/pyrobot/!svn/ver/2529/trunk/camera/aibo
+END
+AiboLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2521/trunk/camera/aibo/AiboLib.cpp
+END
+RWLock.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/1657/trunk/camera/aibo/RWLock.cpp
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/pyrobot/!svn/ver/2518/trunk/camera/aibo/__init__.py
+END
+jpeg.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/1647/trunk/camera/aibo/jpeg.c
+END
+AiboLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2521/trunk/camera/aibo/AiboLib.h
+END
+RWLock.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/1657/trunk/camera/aibo/RWLock.h
+END
+AiboLib.i
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/pyrobot/!svn/ver/2521/trunk/camera/aibo/AiboLib.i
+END
+Socket.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2427/trunk/camera/aibo/Socket.cpp
+END
+Makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2526/trunk/camera/aibo/Makefile.linux
+END
+jpeg.h
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/pyrobot/!svn/ver/1647/trunk/camera/aibo/jpeg.h
+END
+Makefile.mac
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/pyrobot/!svn/ver/2521/trunk/camera/aibo/Makefile.mac
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/2529/trunk/camera/aibo/Makefile
+END
+Socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/pyrobot/!svn/ver/2427/trunk/camera/aibo/Socket.h
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/2529/trunk/camera/player
+END
+PlayerCamLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/2520/trunk/camera/player/PlayerCamLib.cpp
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/2367/trunk/camera/player/__init__.py
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/1839/trunk/camera/player/setup.py
+END
+PlayerCamLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2520/trunk/camera/player/PlayerCamLib.h
+END
+Makefile.linux
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2526/trunk/camera/player/Makefile.linux
+END
+PlayerCamLib.i
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2520/trunk/camera/player/PlayerCamLib.i
+END
+Makefile.mac
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/pyrobot/!svn/ver/2520/trunk/camera/player/Makefile.mac
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2529/trunk/camera/player/Makefile
+END

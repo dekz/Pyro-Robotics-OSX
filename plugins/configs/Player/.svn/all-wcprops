@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player
+END
+vfh.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/vfh.cfg
+END
+rfid.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/rfid.cfg
+END
+dummy.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/dummy.cfg
+END
+writelog.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/writelog.cfg
+END
+nomad.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/nomad.cfg
+END
+amigobot.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/amigobot.cfg
+END
+pioneer.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/pioneer.cfg
+END
+umass_ATRVMini.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/umass_ATRVMini.cfg
+END
+b21r_rflex_lms200.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/b21r_rflex_lms200.cfg
+END
+obot.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/obot.cfg
+END
+gazebo.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/gazebo.cfg
+END
+wavefront.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/wavefront.cfg
+END
+mapfile.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/mapfile.cfg
+END
+readlog.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/readlog.cfg
+END
+segwayrmp.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/segwayrmp.cfg
+END
+umass_reb.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/umass_reb.cfg
+END
+umass_ATRVJr.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/pyrobot/!svn/ver/2460/trunk/plugins/configs/Player/umass_ATRVJr.cfg
+END

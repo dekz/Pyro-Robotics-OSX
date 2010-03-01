@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/pyrobot/!svn/ver/2458/trunk/system/serial
+END
+serialutil.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/pyrobot/!svn/ver/1527/trunk/system/serial/serialutil.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/pyrobot/!svn/ver/1527/trunk/system/serial/__init__.py
+END
+serialposix.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/2458/trunk/system/serial/serialposix.py
+END
+serialwin32.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/pyrobot/!svn/ver/1527/trunk/system/serial/serialwin32.py
+END

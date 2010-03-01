@@ -1,0 +1,18 @@
+driver (		
+  name "stage"
+  provides ["7000:simulation:0"]
+  plugin "libstageplugin"
+  worldfile "chase.world"	
+)
+
+driver ( 
+ name "stage"  
+ provides ["6665:position2d:0" "6665:sonar:0" "6665:blobfinder:0"] 
+ model "GreenRobot" 
+)
+
+driver ( 
+ name "stage"  
+ provides ["6666:position2d:0" "6666:sonar:0" "6666:blobfinder:0"]
+ model "RedRobot" 
+)
