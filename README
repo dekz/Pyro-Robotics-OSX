@@ -4,5 +4,4 @@ Pyrobot README File
 Please see http://PyroRobotics.org/ for notes on installation,
 development, use, licensing, etc.
 
-
-
+run: bin/pyrobot
